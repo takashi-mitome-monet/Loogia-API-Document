@@ -1,0 +1,161 @@
+{
+  "instance": {
+    "type": "vrp",
+    "fleetSizeLimit": 10
+  },
+  "vehicles": [
+    {
+      "id": "v1",
+      "vehicleTypeId": "vtype1",
+      "startLocation": {
+        "id": "startDepot1",
+        "coord": {
+          "x": 10,
+          "y": 300
+        },
+        "timeSchedule": {
+          "type": "piecewiseLinear",
+          "penaltyFunction": [
+            {
+              "tmin": 0,
+              "tmax": 200,
+              "gradient": -1
+            }
+          ]
+        }
+      },
+      "endLocation": {
+        "id": "endDepot1",
+        "coord": {
+          "x": 20,
+          "y": 200
+        },
+        "timeWindow": {
+          "type": "range",
+          "range": [
+            {
+              "readyTime": 10000,
+              "dueTime": 12000
+            },
+            {
+              "readyTime": 18000,
+              "dueTime": 20000
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "v2",
+      "type": "",
+      "capacity": 200
+    }
+  ],
+  "vehicleTypes": [
+    {
+      "id": "vtype1",
+      "capacity": 10,
+      "cost": {
+        "fixed": 100,
+        "distance": 1,
+        "duration": 0
+      }
+    }
+  ],
+  "services": {
+    "pairs": [
+      {
+        "id": "pd1",
+        "pickup": "a1",
+        "delivery": "a3"
+      }
+    ]
+  },
+  "vertices": [
+    {
+      "id": "a1",
+      "name": "aaa",
+      "serviceType": "pickup",
+      "timeWindow": {
+        "type": "range",
+        "range": [
+          {
+            "readyTime": 10000,
+            "dueTime": 12000
+          },
+          {
+            "readyTime": 18000,
+            "dueTime": 20000
+          }
+        ]
+      },
+      "demand": 10,
+      "serviceTime": 12345,
+      "priority": 10
+    },
+    {
+      "id": "a2",
+      "name": "bbb",
+      "timeWindow": {
+        "type": "piecewiseLinear",
+        "penaltyFunction": [
+          {
+            "tmin": 0,
+            "tmax": 200,
+            "gradient": -1
+          },
+          {
+            "tmin": 200,
+            "tmax": 400,
+            "gradient": 1
+          }
+        ]
+      },
+      "demand": 10,
+      "serviceTime": 12345,
+      "priority": 10
+    }
+  ],
+  "matrix": [
+    {
+      "type": "distance",
+      "value": [
+        [
+          0,
+          5,
+          3
+        ],
+        [
+          2,
+          0,
+          10
+        ],
+        [
+          1,
+          8,
+          0
+        ]
+      ]
+    },
+    {
+      "type": "duration",
+      "value": [
+        [
+          0,
+          2.3,
+          1.2
+        ],
+        [
+          0.4,
+          0,
+          6.6
+        ],
+        [
+          0.75,
+          3,
+          0
+        ]
+      ]
+    }
+  ]
+}
