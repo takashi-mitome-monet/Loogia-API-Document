@@ -32,8 +32,8 @@
     {
       "id": "vtype1",
       "capacity": 10,
-      "cost": { // 非対応
-        "fixed": 100,
+      "cost": {
+        "fixed": 0,
         "distance": 0,
         "duration": 1
       }
@@ -45,7 +45,7 @@
       "name": "depot",
       "demand": 0, //車両の容量の消費量
       "serviceDuration": 0, //サービスにかかる時間
-      "address": "愛知県名古屋市中村区名駅1−1−3"
+      "address": "愛知県名古屋市中村区名駅1−1−3",
       "location": {
         "lat": 35.172520,
         "lng": 136.882607
@@ -56,7 +56,7 @@
       "name": "depot",
       "demand": 0,
       "serviceDuration": 0,
-      "address": "愛知県名古屋市千種区不老町"
+      "address": "愛知県名古屋市千種区不老町",
       "location": {
         "lat": 35.153510,
         "lng": 136.967573
@@ -80,8 +80,8 @@
       },
       "demand": 10, //車両の容量の消費量
       "serviceDuration": 120, //サービスにかかる時間
-      "priority": 10 //非対応
-      "address": "愛知県名古屋市千種区末盛通5-17"
+      "priority": 10, //非対応
+      "address": "愛知県名古屋市千種区末盛通5-17",
       "location": {
         "lat": 35.163891,
         "lng": 136.962617
