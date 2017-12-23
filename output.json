@@ -1,0 +1,62 @@
+{
+  "vehicles": [
+    {
+      "id": "v1",
+      "route": [
+        {
+          "id": "depot1",
+          "arrival_time": 1513954800.0,
+          "service_duration": 0.0,
+          "travel_duration": 1200.0,
+          "start_time": 1513954800.0,
+          "timep": 0.00 //時間枠を破った場合>0の値が入る
+          "location": {
+            "lat": 35.172520,
+            "lng": 136.882607
+          }
+        },
+        {
+          "id": "a1",
+          "arrival_time": 1513956000.0,
+          "service_duration": 120.0,
+          "travel_duration": 1260.0,
+          "start_time": 1513958400.0,
+          "timep": 0.00
+          "location": {
+            "lat": 35.163891,
+            "lng": 136.962617
+          }
+        },
+        {
+          "id": "depot1",
+          "arrival_time": 1513959780.0,
+          "start_time": 1513959780.0,
+          "timep": 0.00
+          "location": {
+            "lat": 35.153510,
+            "lng": 136.967573
+          }
+        }
+      ]
+    },
+    {
+      "id": "v2",
+      "route": [
+        {
+          "id": "depot2",
+          "arrival_time": 1513958400.0,
+          "service_duration": 0.0,
+          "travel_duration": 0.0,
+          "start_time": 1513958400.0,
+          "timep": 0.00
+        },
+        {
+          "id": "depot2",
+          "arrival_time": 1513958400.0,
+          "start_time": 1513958400.0,
+          "timep": 0.00
+        }
+      ]
+    }
+  ]
+}
