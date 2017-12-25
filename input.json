@@ -2,10 +2,23 @@
   "instance": {
     "problem": "vrp"
   },
-  "vehicles": [
+  "drivers": [
     {
-      "id": "v1",
+      "id": "d1",
       "vehicleTypeId": "vtype1",
+      "phone": "090-0000-0000",
+      "name": "shiichi",
+      "speed": "",
+      "available": true,
+      "lunchBreak": {
+        "type": "range",
+        "range": [
+          {
+            "startTime": 1513958400,
+            "endTime": 1513960400
+          }
+        ]
+      },
       "startLocation": {
         "id": "depot1",
         "time": 1513954800 //これ以降に出発
@@ -16,8 +29,21 @@
       }
     },
     {
-      "id": "v2",
+      "id": "d2",
       "vehicleTypeId": "vtype2",
+      "phone": "090-0000-0000",
+      "name": "shiichi",
+      "speed": "",
+      "available": true,
+      "lunchBreak": {
+        "type": "range",
+        "range": [
+          {
+            "startTime": 1513958400,
+            "endTime": 1513960400
+          }
+        ]
+      },
       "startLocation": {
         "id": "depot2",
         "time": 1513958400
