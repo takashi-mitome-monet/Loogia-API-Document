@@ -21,10 +21,14 @@
 			},
 			"startLocation": {
 				"id": "depot1",
+				"lat": 35.172520,
+				"lng": 136.882607,
 				"time": 1513954800
 			},
 			"endLocation": {
 				"id": "depot1",
+				"lat": 35.172520,
+				"lng": 136.882607,
 				"time": 1513972800
 			}
 		},
@@ -57,11 +61,20 @@
 	"vehicleTypes": [
 		{
 			"id": "vtype1",
-			"capacity": 10,
+			"capacity": [
+				{
+					"dim": 0,
+					"size": 30
+				},
+				{
+					"dim": 1,
+					"size": 20
+				}
+			],
 			"cost": {
-				"fixed": 0,
-				"distance": 0,
-				"duration": 1
+				"fixed": 0.0,
+				"distance": 0.0,
+				"duration": 1.0
 			}
 		}
 	],
