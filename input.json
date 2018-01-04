@@ -13,7 +13,7 @@
 	"vehicleTypes": [
 		{
 			"id": "vtype1",
-			"capacity": [
+			"capacities": [
 				{
 					"dim": 0,
 					"size": 100000
@@ -60,7 +60,7 @@
 			},
 			"timeWindow": {
 				"type": "range",
-				"range": [
+				"ranges": [
 					{
 						"readyTime": 1514854800,
 						"dueTime": 1514858400
