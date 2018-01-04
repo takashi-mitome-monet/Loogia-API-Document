@@ -1,61 +1,13 @@
 {
+	"id": "ecibcNu9KLISuUq8XH8E",
 	"instance": {
-		"problem": "vrp"
+		"solver": "riko"
 	},
-	"drivers": [
+	"depots": [
 		{
-			"id": "d1",
-			"vehicleTypeId": "vtype1",
-			"phone": "090-0000-0000",
-			"name": "shiichi",
-			"speed": "",
-			"available": true,
-			"breaks": {
-				"type": "range",
-				"range": [
-					{
-						"readyTime": 1513958400,
-						"dueTime": 1513960400
-					}
-				]
-			},
-			"startLocation": {
-				"id": "depot1",
-				"lat": 35.172520,
-				"lng": 136.882607,
-				"time": 1513954800
-			},
-			"endLocation": {
-				"id": "depot1",
-				"lat": 35.172520,
-				"lng": 136.882607,
-				"time": 1513972800
-			}
-		},
-		{
-			"id": "d2",
-			"vehicleTypeId": "vtype2",
-			"phone": "090-0000-0000",
-			"name": "shiichi",
-			"speed": "",
-			"available": true,
-			"breaks": {
-				"type": "range",
-				"range": [
-					{
-						"readyTime": 1513958400,
-						"dueTime": 1513960400
-					}
-				]
-			},
-			"startLocation": {
-				"id": "depot2",
-				"time": 1513958400
-			},
-			"endLocation": {
-				"id": "depot2",
-				"time": 1513980000
-			}
+			"id": "depot1",
+			"lat": 35.172520,
+			"lng": 136.882607
 		}
 	],
 	"vehicleTypes": [
@@ -64,118 +16,69 @@
 			"capacity": [
 				{
 					"dim": 0,
-					"size": 30
-				},
-				{
-					"dim": 1,
-					"size": 20
+					"size": 100000
 				}
 			],
 			"cost": {
 				"fixed": 0.0,
 				"distance": 0.0,
-				"duration": 1.0
+				"duration": 0.0
+			}
+		}
+	],
+	"drivers": [
+		{
+			"id": "driver1",
+			"available": true,
+			"vehicleTypeId": "vtype1",
+			"phone": "090-0000-0000",
+			"name": "shiichi",
+			"speed": "",
+			"skills": [
+				"common",
+				"skill1"
+			],
+			"breaks": {
+				"type": "none"
+			},
+			"startLocation": {
+				"id": "depot1",
+				"time": 1513954800
+			},
+			"endLocation": {
+				"id": "depot1",
+				"time": 1513972800
 			}
 		}
 	],
 	"vertices": [
 		{
-			"id": "depot1",
-			"name": "depot",
-			"demands": [
-				{
-					"dim": 0,
-					"size": 30.5
-				},
-				{
-					"dim": 1,
-					"size": 20
-				}
-			],
-			"serviceDuration": 0,
-			"address": "愛知県名古屋市中村区名駅1−1−3",
+			"id": "oS33X9rnEFUQirf2ZGKj",
 			"location": {
-				"lat": 35.172520,
-				"lng": 136.882607
-			}
-		},
-		{
-			"id": "depot2",
-			"name": "depot",
-			"demands": [
-				{
-					"dim": 0,
-					"size": 30.5
-				},
-				{
-					"dim": 1,
-					"size": 20
-				}
-			],
-			"serviceDuration": 0,
-			"address": "愛知県名古屋市千種区不老町",
-			"location": {
-				"lat": 35.153510,
-				"lng": 136.967573
-			}
-		},
-		{
-			"id": "a1",
-			"name": "aaa",
+				"lat": 35.163891,
+				"lng": 136.962617
+			},
 			"timeWindow": {
 				"type": "range",
 				"range": [
 					{
-						"readyTime": 1513958400,
-						"dueTime": 1513972800
-					},
-					{
-						"readyTime": 1513973000,
-						"dueTime": 1513980000
+						"readyTime": 1514854800,
+						"dueTime": 1514858400
 					}
 				]
 			},
 			"demands": [
 				{
 					"dim": 0,
-					"size": 30.5
-				},
-				{
-					"dim": 1,
-					"size": 20
+					"size": 1
 				}
 			],
 			"serviceDuration": 120,
-			"priority": 10,
-			"skill": "electric drill",
-			"address": "愛知県名古屋市千種区末盛通5-17",
-			"location": {
-				"lat": 35.163891,
-				"lng": 136.962617
-			}
+			"priority": 0,
+			"skill": "common"
 		}
 	],
 	"matrix": [
-		{
-			"type": "distance",
-			"values": [
-				[
-					0,
-					1160,
-					1150
-				],
-				[
-					1270,
-					0,
-					2000
-				],
-				[
-					1290,
-					1900,
-					0
-				]
-			]
-		},
 		{
 			"type": "duration",
 			"values": [
@@ -198,3 +101,4 @@
 		}
 	]
 }
+
