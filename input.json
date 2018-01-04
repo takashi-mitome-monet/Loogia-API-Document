@@ -6,8 +6,10 @@
 	"depots": [
 		{
 			"id": "depot1",
-			"lat": 35.172520,
-			"lng": 136.882607
+			"location": {
+				"lat": 35.172520,
+				"lng": 136.882607
+			}
 		}
 	],
 	"vehicleTypes": [
