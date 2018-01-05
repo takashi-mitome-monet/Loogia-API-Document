@@ -51,6 +51,34 @@
 				"id": "depot1",
 				"time": 1513972800
 			}
+		},
+		{
+			"id": "driver2",
+			"available": true,
+			"vehicleTypeId": "vtype1",
+			"phone": "090-0000-0000",
+			"name": "shiichi",
+			"speed": "",
+			"skills": [
+				"common",
+				"skill1"
+			],
+			"breaks": {
+				"type": "range",
+				"ranges": [
+					"readyTime": 1513954800,
+					"dueTime": 1513956000,
+				    "serviceDuration": 600
+				]
+			},
+			"startLocation": {
+				"id": "depot1",
+				"time": 1513954800
+			},
+			"endLocation": {
+				"id": "depot1",
+				"time": 1513972800
+			}
 		}
 	],
 	"vertices": [
