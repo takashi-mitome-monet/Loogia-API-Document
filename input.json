@@ -40,7 +40,7 @@
 				"common",
 				"skill1"
 			],
-			"breaks": {
+			"break": {
 				"type": "none"
 			},
 			"startLocation": {
@@ -63,7 +63,7 @@
 				"common",
 				"skill1"
 			],
-			"breaks": {
+			"break": {
 				"type": "range",
 				"ranges": [
 					{
