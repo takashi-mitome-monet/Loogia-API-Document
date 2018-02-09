@@ -31,7 +31,6 @@
 	"drivers": [
 		{
 			"id": "driver1",
-			"available": true,
 			"vehicleTypeId": "vtype1",
 			"phone": "090-0000-0000",
 			"name": "shiichi",
@@ -54,7 +53,6 @@
 		},
 		{
 			"id": "driver2",
-			"available": true,
 			"vehicleTypeId": "vtype1",
 			"phone": "090-0000-0000",
 			"name": "shiichi",
