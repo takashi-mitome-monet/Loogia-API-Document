@@ -17,7 +17,7 @@
 			"id": "vtype1",
 			"capacities": [
 				{
-					"dim": 0,
+					"dimId": 0,
 					"size": 100000
 				}
 			],
@@ -36,8 +36,8 @@
 			"name": "shiichi",
 			"speed": "",
 			"skills": [
-				"common",
-				"skill1"
+				0,
+				1
 			],
 			"break": {
 				"type": "none"
@@ -58,8 +58,8 @@
 			"name": "shiichi",
 			"speed": "",
 			"skills": [
-				"common",
-				"skill1"
+				0,
+				1
 			],
 			"break": {
 				"type": "range",
@@ -93,19 +93,20 @@
 				"ranges": [
 					{
 						"readyTime": 1514854800,
-						"dueTime": 1514858400
+						"dueTime": 1514858400,
+						"gradient": 2
 					}
 				]
 			},
 			"demands": [
 				{
-					"dim": 0,
+					"dimId": 0,
 					"size": 1
 				}
 			],
 			"serviceDuration": 120,
 			"priority": 0,
-			"skill": "common"
+			"skill": 0
 		}
 	],
 	"matrix": [
