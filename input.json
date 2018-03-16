@@ -83,7 +83,7 @@
 	],
 	"stops": [
 		{
-			"id": "oS33X9rnEFUQirf2ZGKj",
+			"id": 1,
 			"location": {
 				"lat": 35.163891,
 				"lng": 136.962617
@@ -104,7 +104,12 @@
 					"size": 1
 				}
 			],
-			"serviceDuration": 120,
+			"serviceDuration": {
+				"general": 120,
+				"before": {
+					"1": 30
+				}
+			},
 			"priority": 0,
 			"skill": 0
 		}
