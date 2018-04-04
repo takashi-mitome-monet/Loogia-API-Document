@@ -1,7 +1,8 @@
 {
   "vehicles": [
     {
-      "id": "v1",
+      "driverId": "driver1",
+      "vehicleId": "vehicle1",
       "route": [
         {
           "id": "depot1",
@@ -23,7 +24,8 @@
       ]
     },
     {
-      "id": "v2",
+      "driverId": "driver2",
+      "vehicleId": "vehicle2",
       "route": [
         {
           "id": "depot2",
