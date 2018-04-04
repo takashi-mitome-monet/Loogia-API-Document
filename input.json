@@ -12,32 +12,16 @@
 			}
 		}
 	],
-	"vehicleTypes": [
+	"vehicles": [
 		{
-			"id": "vtype1",
-			"capacities": [
-				{
-					"dimId": 0,
-					"size": 100000
-				}
-			],
-			"cost": {
-				"fixed": 0.0,
-				"distance": 0.0,
-				"duration": 1.0
-			}
-		}
-	],
-	"drivers": [
-		{
-			"id": "driver1",
-			"vehicleTypeId": "vtype1",
-			"phone": "090-0000-0000",
-			"name": "shiichi",
+			"driverId": "driver1",
+			"vehicleId": "vehicle1",
 			"speed": "",
 			"skills": [
-				0,
-				1
+				0, //Driver由来
+				1, //Driver由来
+				3, //Vehicle由来
+				4  //Vehicle由来
 			],
 			"break": {
 				"type": "none"
@@ -49,13 +33,22 @@
 			"endLocation": {
 				"id": "depot1",
 				"time": 1513972800
+			},
+			"capacities": [
+				{
+					"dimId": 0,
+					"size": 100000
+				}
+			],
+			"cost": {
+				"fixed": 0.0,
+				"distance": 0.0,
+				"duration": 1.0
 			}
 		},
 		{
-			"id": "driver2",
-			"vehicleTypeId": "vtype1",
-			"phone": "090-0000-0000",
-			"name": "shiichi",
+			"driverId": "driver1",
+			"vehicleId": "vehicle1",
 			"speed": "",
 			"skills": [
 				0,
@@ -78,6 +71,17 @@
 			"endLocation": {
 				"id": "depot1",
 				"time": 1513972800
+			},
+			"capacities": [
+				{
+					"dimId": 0,
+					"size": 100000
+				}
+			],
+			"cost": {
+				"fixed": 0.0,
+				"distance": 0.0,
+				"duration": 1.0
 			}
 		}
 	],
