@@ -116,7 +116,8 @@
 			"priority": 0,
 			"skills": [
 				"veteran"
-			]
+			],
+			"uTernCost": 60
 		}
 	],
 	"matrix": [
