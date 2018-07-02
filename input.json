@@ -1,8 +1,11 @@
 {
-	"id": "ecibcNu9KLISuUq8XH8E",
-	"instance": {
-		"solver": "riko"
+	"version": "v1",
+	"solver": {
+		"name": "mizzy",
+		"version": "1.0.0",
+		"calculationTime": 5,
 	},
+	"id": "ecibcNu9KLISuUq8XH8E",
 	"depots": [
 		{
 			"id": "depot1",
@@ -16,7 +19,6 @@
 		{
 			"driverId": "driver1",
 			"vehicleId": "vehicle1",
-			"speed": "",
 			"skills": [
 				"veteran", //Driver由来
 				"cold" //Vehicle由来
@@ -47,7 +49,6 @@
 		{
 			"driverId": "driver1",
 			"vehicleId": "vehicle1",
-			"speed": "",
 			"skills": [
 				"veteran", //Driver由来
 				"cold" //Vehicle由来
@@ -115,7 +116,7 @@
 			"priority": 0,
 			"skills": [
 				"veteran"
-            ]
+			]
 		}
 	],
 	"matrix": [
