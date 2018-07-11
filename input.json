@@ -1,11 +1,12 @@
 {
-	"version": "v1",
-	"solver": {
-		"name": "mizzy",
-		"version": "1.0.0",
-		"calculationTime": 5,
-	},
-	"id": "ecibcNu9KLISuUq8XH8E",
+        "name": "mizzy",      
+        "calculationTime": 10,
+        "restrictTurnRight": true,
+        },
+        "callback": {
+          "url": 'https://google.com',
+          "meta": {}, コールバック先にそのまま返して欲しい値、なんでも入れることができる 
+        },
 	"depots": [
 		{
 			"id": "depot1",
@@ -15,10 +16,9 @@
 			}
 		}
 	],
-	"vehicles": [
+	"carriers": [
 		{
-			"driverId": "driver1",
-			"vehicleId": "vehicle1",
+			"id": "carrierId1",
 			"skills": [
 				"veteran", //Driver由来
 				"cold" //Vehicle由来
@@ -47,8 +47,7 @@
 			}
 		},
 		{
-			"driverId": "driver1",
-			"vehicleId": "vehicle1",
+			"id": "carrierId2",
 			"skills": [
 				"veteran", //Driver由来
 				"cold" //Vehicle由来
@@ -120,27 +119,6 @@
 			"uTernCost": 60
 		}
 	],
-	"matrix": [
-		{
-			"type": "duration",
-			"values": [
-				[
-					0,
-					1200,
-					1200
-				],
-				[
-					1260,
-					0,
-					540
-				],
-				[
-					1320,
-					420,
-					0
-				]
-			]
-		}
-	]
+
 }
 
