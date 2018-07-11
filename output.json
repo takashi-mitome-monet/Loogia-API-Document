@@ -1,78 +1,86 @@
 {
-  "vehicles": [
-    {
-      "driverId": "driver1",
-      "vehicleId": "vehicle1",
-      "route": [
-        {
-          "id": "depot1",
-          "arrival_time": 1513954800.0,
-          "travel_duration": 1200.0,
-          "service_duration": 0.0,
-          "start_time": 1513954800.0,
-          "location": {
-            "lng": 136.914686,
-            "lat": 35.223404
+  "meta": {},
+  "solution": {
+    "carriers": [
+      {
+        "id": "carrier1",
+        "route": [
+          {
+            "id": "depot1",
+            "arrivalTime": 1513954800.0,
+            "travelDuration": 1200.0,
+            "serviceDuration": 0.0,
+            "startTime": 1513954800.0,
+            "geocode": {
+              "lng": 136.914686,
+              "lat": 35.223404
+            },
+            "polyline": "yp~uEyctbY?s@gBDA}@As@?c@EsC"
           },
-          "polyline": "yp~uEyctbY?s@gBDA}@As@?c@EsC"
-        },
-        {
-          "id": "a1",
-          "arrival_time": 1513956000.0,
-          "travel_duration": 1260.0,
-          "service_duration": 120.0,
-          "start_time": 1513958400.0,
-          "location": {
-            "lng": 136.916402,
-            "lat": 35.223999
+          {
+            "id": "a1",
+            "arrivalTime": 1513956000.0,
+            "travelDuration": 1260.0,
+            "serviceDuration": 120.0,
+            "startTime": 1513958400.0,
+            "geocode": {
+              "lng": 136.916402,
+              "lat": 35.223999
+            },
+            "polyline": "kt~uEqntbYDrC?b@@r@@|@eBBcBBcA`Ic@pCJB@tF`A`Bl@jA^x@jA?CgB"
           },
-          "polyline": "kt~uEqntbYDrC?b@@r@@|@eBBcBBcA`Ic@pCJB@tF`A`Bl@jA^x@jA?CgB"
-        },
-        {
-          "id": "depot1",
-          "arrival_time": 1513959780.0,
-          "start_time": 1513959780.0,
-          "location": {
-            "lng": 136.91064,
-            "lat": 35.224407
+          {
+            "id": "depot1",
+            "arrivalTime": 1513959780.0,
+            "travelDuration": 1200.0,
+            "serviceDuration": 10.0,
+            "startTime": 1513959780.0,
+            "geocode": {
+              "lng": 136.91064,
+              "lat": 35.224407
+            }
           }
-        }
-      ]
-    },
-    {
-      "driverId": "driver2",
-      "vehicleId": "vehicle2",
-      "route": [
-        {
-          "id": "depot2",
-          "arrival_time": 1513958400.0,
-          "travel_duration": 0.0,
-          "service_duration": 0.0,
-          "start_time": 1513958400.0,
-          "location": {
-            "lng": 136.91064,
-            "lat": 35.224407
+        ]
+      },
+      {
+        "driverId": "driver2",
+        "vehicleId": "vehicle2",
+        "route": [
+          {
+            "id": "depot2",
+            "arrivalTime": 1513958400.0,
+            "travelDuration": 0.0,
+            "serviceDuration": 0.0,
+            "startTime": 1513958400.0,
+            "geocode": {
+              "lng": 136.91064,
+              "lat": 35.224407
+            },
+            "polyline": "mv~uEqjsbY"
           },
-          "polyline": "mv~uEqjsbY"
-        },
-        {
-          "id": "depot2",
-          "arrival_time": 1513958400.0,
-          "start_time": 1513958400.0,
-          "location": {
-            "lng": 136.91064,
-            "lat": 35.224407
+          {
+            "id": "depot2",
+            "arrivalTime": 1513958400.0,
+            "travelDuration": 0.0,
+            "serviceDuration": 0.0,
+            "startTime": 1513958400.0,
+            "geocode": {
+              "lng": 136.91064,
+              "lat": 35.224407
+            }
           }
-        }
-      ]
-    }
-  ],
-  "unassignedStops": [
-    {
-      "id": "a2"
-    },
-    {
-      "id": "a3"
-    }
-  ]
+        ]
+      }
+    ],
+    "unassignedStops": [
+      {
+        "id": "a2"
+      },
+      {
+        "id": "a3"
+      }
+    ]
+  }
 }
+
+  
