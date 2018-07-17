@@ -1,5 +1,9 @@
 {
   "meta": {},
+  "error": {
+    "message": "invalid JSON format",
+    "status": 400
+  },
   "solution": {
     "carriers": [
       {
