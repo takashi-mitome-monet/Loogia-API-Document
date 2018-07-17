@@ -4,8 +4,9 @@
         "restrictTurnRight": true,
         },
         "callback": {
-          "url": 'https://google.com',
-          "meta": {}, コールバック先にそのまま返して欲しい値、なんでも入れることができる 
+          "url": "https://google.com",
+          "meta": {}, // コールバック先にそのまま返して欲しい値、なんでも入れることができる
+          "headers": {} // コールバック先にそのままヘッダーとして渡す
         },
 	"depots": [
 		{
