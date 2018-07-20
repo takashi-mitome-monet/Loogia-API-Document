@@ -118,6 +118,40 @@
             ],
             "uTernCost": 60
         }
+    ],
+    "matrix": [
+        {
+            "type": "duration",
+            "values": [
+                [],
+                [],
+                []
+            ]
+        },
+        {
+            "type": "arrivalDirections",
+            "values": [
+                [],
+                [],
+                []
+            ]
+        },
+        {
+            "type": "departureDirections",
+            "values": [
+                [],
+                [],
+                []
+            ]
+        },
+        {
+            "type": "encodedPolyline",
+            "values": [
+                [],
+                [],
+                []
+            ]
+        }
     ]
 }
 
