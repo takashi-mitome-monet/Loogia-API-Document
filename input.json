@@ -1,125 +1,123 @@
 {
-        "name": "mizzy",      
-        "calculationTime": 10,
-        "restrictTurnRight": true,
-        },
-        "callback": {
-          "url": "https://google.com",
-          "meta": {}, // コールバック先にそのまま返して欲しい値、なんでも入れることができる
-          "headers": {} // コールバック先にそのままヘッダーとして渡す
-        },
-	"depots": [
-		{
-			"id": "depot1",
-			"location": {
-				"lat": 35.172520,
-				"lng": 136.882607
-			}
-		}
-	],
-	"carriers": [
-		{
-			"id": "carrierId1",
-			"skills": [
-				"veteran", //Driver由来
-				"cold" //Vehicle由来
-			],
-			"break": {
-				"type": "none"
-			},
-			"startLocation": {
-				"id": "depot1",
-				"time": 1513954800
-			},
-			"endLocation": {
-				"id": "depot1",
-				"time": 1513972800
-			},
-			"capacities": [
-				{
-					"dimId": 0,
-					"size": 100000
-				}
-			],
-			"cost": {
-				"fixed": 0.0,
-				"distance": 0.0,
-				"duration": 1.0
-			}
-		},
-		{
-			"id": "carrierId2",
-			"skills": [
-				"veteran", //Driver由来
-				"cold" //Vehicle由来
-			],
-			"break": {
-				"type": "range",
-				"ranges": [
-					{
-						"readyTime": 1513954800,
-						"dueTime": 1513956000,
-						"serviceDuration": 600
-					}
-				]
-			},
-			"startLocation": {
-				"id": "depot1",
-				"time": 1513954800
-			},
-			"endLocation": {
-				"id": "depot1",
-				"time": 1513972800
-			},
-			"capacities": [
-				{
-					"dimId": 0,
-					"size": 100000
-				}
-			],
-			"cost": {
-				"fixed": 0.0,
-				"distance": 0.0,
-				"duration": 1.0
-			}
-		}
-	],
-	"stops": [
-		{
-			"id": 1,
-			"location": {
-				"lat": 35.163891,
-				"lng": 136.962617
-			},
-			"timeWindow": {
-				"type": "range",
-				"ranges": [
-					{
-						"readyTime": 1514854800,
-						"dueTime": 1514858400,
-						"gradient": 2
-					}
-				]
-			},
-			"demands": [
-				{
-					"dimId": 0,
-					"size": 1
-				}
-			],
-			"serviceDuration": {
-				"general": 120,
-				"before": {
-					"1": 30
-				}
-			},
-			"priority": 0,
-			"skills": [
-				"veteran"
-			],
-			"uTernCost": 60
-		}
-	],
-
+    "name": "mizzy",
+    "calculationTime": 10,
+    "restrictTurnRight": true,
+    "callback": {
+        "url": "https://google.com",
+        "meta": {}, //コールバック先にそのまま返して欲しい値、なんでも入れることができる
+        "headers": {} //コールバック先にそのままヘッダーとして渡す
+    },
+    "depots": [
+	    {
+		    "id": "depot1",
+		    "location": {
+			    "lat": 35.172520,
+			    "lng": 136.882607
+		    }
+	    }
+    ],
+    "carriers": [
+	    {
+		    "id": "carrierId1",
+		    "skills": [
+			    "veteran", //Driver由来
+			    "cold" //Vehicle由来
+		    ],
+		    "break": {
+			    "type": "none"
+		    },
+		    "startLocation": {
+			    "id": "depot1",
+			    "time": 1513954800
+		    },
+		    "endLocation": {
+			    "id": "depot1",
+			    "time": 1513972800
+		    },
+		    "capacities": [
+			    {
+				    "dimId": 0,
+				    "size": 100000
+			    }
+		    ],
+		    "cost": {
+			    "fixed": 0.0,
+			    "distance": 0.0,
+			    "duration": 1.0
+		    }
+	    },
+	    {
+		    "id": "carrierId2",
+		    "skills": [
+			    "veteran", //Driver由来
+			    "cold" //Vehicle由来
+		    ],
+		    "break": {
+			    "type": "range",
+			    "ranges": [
+				    {
+					    "readyTime": 1513954800,
+					    "dueTime": 1513956000,
+					    "serviceDuration": 600
+				    }
+			    ]
+		    },
+		    "startLocation": {
+			    "id": "depot1",
+			    "time": 1513954800
+		    },
+		    "endLocation": {
+			    "id": "depot1",
+			    "time": 1513972800
+		    },
+		    "capacities": [
+			    {
+				    "dimId": 0,
+				    "size": 100000
+			    }
+		    ],
+		    "cost": {
+			    "fixed": 0.0,
+			    "distance": 0.0,
+			    "duration": 1.0
+		    }
+	    }
+    ],
+    "stops": [
+	    {
+		    "id": 1,
+		    "location": {
+			    "lat": 35.163891,
+			    "lng": 136.962617
+		    },
+		    "timeWindow": {
+			    "type": "range",
+			    "ranges": [
+				    {
+					    "readyTime": 1514854800,
+					    "dueTime": 1514858400,
+					    "gradient": 2
+				    }
+			    ]
+		    },
+		    "demands": [
+			    {
+				    "dimId": 0,
+				    "size": 1
+			    }
+		    ],
+		    "serviceDuration": {
+			    "general": 120,
+			    "before": {
+				    "1": 30
+			    }
+		    },
+		    "priority": 0,
+		    "skills": [
+			    "veteran"
+		    ],
+		    "uTernCost": 60
+	    }
+    ]
 }
 
