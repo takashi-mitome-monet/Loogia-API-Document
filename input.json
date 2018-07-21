@@ -116,7 +116,7 @@
             "skills": [
                 "veteran"
             ],
-            "uTernCost": 60
+            "uturnCost": 60
         }
     ],
     "matrix": [
