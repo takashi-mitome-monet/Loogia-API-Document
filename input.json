@@ -58,9 +58,9 @@
                     {
                         "readyTime": 1513954800,
                         "dueTime": 1513956000,
-                        "serviceDuration": 600
                     }
-                ]
+                ],
+                "duration": 600
             },
             "startLocation": {
                 "id": "depot1",
