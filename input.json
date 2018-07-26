@@ -96,7 +96,11 @@
                     {
                         "readyTime": 1514854800,
                         "dueTime": 1514858400,
-                        "gradient": 2
+                        "gradient": 2,
+                        "margin": {
+                            "early": 600,
+                            "late": 600
+                        }
                     }
                 ]
             },
