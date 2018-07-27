@@ -31,14 +31,15 @@
                             "lng": 136.916402,
                             "lat": 35.223999
                         },
-                        "polyline": "kt~uEqntbYDrC?b@@r@@|@eBBcBBcA`Ic@pCJB@tF`A`Bl@jA^x@jA?CgB"
+                        "polyline": "kt~uEqntbYDrC?b@@r@@|@eBBcBBcA`Ic@pCJB@tF`A`Bl@jA^x@jA?CgB",
+                        "break": {
+                            "startTime": 1513959780.0,
+                            "duration": 300
+                        }
                     },
                     {
                         "id": "depot1",
-                        "arrivalTime": 1513959780.0,
-                        "travelDuration": 1200.0,
-                        "serviceDuration": 10.0,
-                        "startTime": 1513959780.0,
+                        "arrivalTime": 1513960080,
                         "geocode": {
                             "lng": 136.91064,
                             "lat": 35.224407
