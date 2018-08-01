@@ -1,16 +1,21 @@
 {
-    "name": "mizzy",
     "calculationTime": 10,
-    "restrictTurnRight": true,
-    "callback": {
+    "callback": { // セキュリティ上の理由からLoogiaのフロントからのみ受け付ける
         "url": "https://google.com",
         "meta": {}, //コールバック先にそのまま返して欲しい値、なんでも入れることができる
         "headers": {} //コールバック先にそのままヘッダーとして渡す
     },
+    "export": { // 結果の出力先を指定
+        "type": "aws-s3",
+        "bucket": "loogia-output",
+        "key": "optimind/20181001/aw4o5ifujaltr.json"
+    },
+    "mapModuleOption": { // 地図エンジンにそのまま渡す (キー名は要相談)
+    },
     "depots": [
         {
             "id": "depot1",
-            "location": {
+            "geocode": {
                 "lat": 35.172520,
                 "lng": 136.882607
             }
@@ -86,10 +91,16 @@
     "stops": [
         {
             "id": 1,
-            "location": {
-                "lat": 35.163891,
-                "lng": 136.962617
-            },
+            "geocodes": [
+                {
+                    "lat": 35.163891,
+                    "lng": 136.962617
+                },
+                {
+                    "lat": 35.164852,
+                    "lng": 136.962009
+                }
+            ],
             "timeWindow": {
                 "type": "range",
                 "ranges": [
