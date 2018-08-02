@@ -136,36 +136,52 @@
     ],
     "matrix": [
         {
-            "type": "duration",
-            "values": [
-                [],
-                [],
-                []
-            ]
+            "duration": 69,
+            "distance": 291.04125610657695,
+            "heading": {
+                "arrival": 84,
+                "departure": 84
+            },
+            "encodedpolyline": "or{uEyoubYGiBhAGjAIhAGSaG",
+            "index": 0,
+            "from": 1,
+            "to": 2
         },
         {
-            "type": "arrivalDirections",
-            "values": [
-                [],
-                [],
-                []
-            ]
+            "duration": 87,
+            "distance": 393.1967367288687,
+            "heading": {
+                "arrival": 84,
+                "departure": 264
+            },
+            "encodedpolyline": "or{uEyoubYFlBjAGQwEjAIhAGSaG",
+            "index": 1,
+            "from": 1,
+            "to": 2
         },
         {
-            "type": "departureDirections",
-            "values": [
-                [],
-                [],
-                []
-            ]
+            "duration": 142,
+            "distance": 1350.4438528066134,
+            "heading": {
+                "arrival": 84,
+                "departure": 228
+            },
+            "encodedpolyline": "mrzuEmwubYhAbBjC~DKJmC}DyCsEyAyBI@aBL_BJiCLiAHoAFeAFE?iAD_@@i@DeAFG@iAFmAHR`GNvEnAIGmB",
+            "index": 1,
+            "from": 0,
+            "to": 1
         },
         {
-            "type": "encodedPolyline",
-            "values": [
-                [],
-                [],
-                []
-            ]
+            "duration": 69,
+            "distance": 291.04125610657695,
+            "heading": {
+                "arrival": 264,
+                "departure": 264
+            },
+            "encodedpolyline": "kl{uE_|ubYR`GiAFkAHiAFFhB",
+            "index": 0,
+            "from": 2,
+            "to": 1
         }
     ]
 }
