@@ -1,7 +1,7 @@
 # input.json
 
 各キーが取る値についての解説。
-キー名の横のカッコ内がデータ型を表す。
+キー名の直後の斜体文字がデータ型を表す。
 
 |データ型|意味|
 |---|---|
@@ -11,7 +11,7 @@
 |array|配列|
 |object|オブジェクト|
 
-必須のキーにはキー名の後にアスタリスク(\*)をつけている。
+必須のキーにはキー名の後にアスタリスク(\*)をつける。
 
 ### depots\*
 
@@ -32,22 +32,63 @@
 
 *object*
 
-[callback](#callback)
+【非公開】計算結果のコールバック先。
+
+#### url\*
+
+*string*
+
+コールバック先のURL。
+
+#### meta
+
+コールバック先にそのまま返すオブジェクト。
+
+#### headers
+
+コールバック先に返すヘッダ。
 
 ### export
 
 *object*
 
-[export](#export)
+計算結果の出力先。
+
+#### type\*
+
+*string*
+
+出力先の種類。
+`"aws-s3"` を指定可能。
+
+|type|種類|
+|--|--|
+|aws-s3|AWS S3 (Simple Storage Service)|
+
+#### bucket
+
+*string*
+
+typeに `"aws-s3"` を指定した場合に必須。
+保存先のS3のバケット名を指定する。
+
+#### key
+
+*string*
+
+typeに `"aws-s3"` を指定した場合に必須。
+保存先のS3のキー名を指定する。
 
 ### mapModuleOption
 
 *object*
-[mapModuleOption](#mapModuleOption)
+
+地図エンジンにそのまま渡す。
 
 ### carriers\*
 
 *array*
+
 [carrier](#carrier)の配列。
 ここで指定された車両を用いてルートを作成する。
 すべての車両を使うとは限らない。
@@ -55,6 +96,7 @@
 ### stops\*
 
 *array*
+
 [stop](#stop)の配列。
 制約，コストによってはここで指定したすべてのstopを訪れるとは限らない。
 ルートに組み込まれなかった点はunassignedとして出力される。
@@ -62,6 +104,7 @@
 ### matrix\*
 
 *array*
+
 [path](#path)の配列。
 すべてのdepot/stop間に対して1つ以上のpathが必要。
 配列の要素数がゼロの場合またははキーが存在しない場合またはnullの場合は内部で持っている地図データからパス情報を取得する。
