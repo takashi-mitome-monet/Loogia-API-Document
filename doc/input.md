@@ -391,5 +391,57 @@ dueTime := dueTime - late
 このstopへ到着したときの道路上における進行方向と次のstopへ出発するときの道路上における進行方向を考え、それが一致しないときにかかるコストを設定する。
 この値が大きいほど到着したときの方向と出発するときの方向を合わせるようにルートを作成する。
 
+## path
 
+2つのstopの間の経路情報。
+
+### from\*
+
+*string*
+
+出発地点のstopのID。
+
+### to\*
+
+*string*
+
+到着地点のstopのID。
+
+### index\*
+
+*integer*
+
+1つのfromとtoの組み合わせにおける経路のインデックス。
+
+### duration
+
+*real (≧0)*
+
+移動時間。
+
+### distance
+
+*real (≧0)*
+
+経路の長さ。
+
+### heading
+
+#### arrival
+
+*real (-π〜π)*
+
+到着地点における進行方向。
+
+#### departure
+
+*real (-π〜π)*
+
+出発地点における進行方向。
+
+#### encodedpolyline
+
+*string*
+
+経路を線で描画するための情報。
 
