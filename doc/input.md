@@ -93,11 +93,13 @@ depotの場所の座標。
 ### id\*
 
 *string*
+
 carrierの中でユニークなID。
 
 ### skills
 
 *array*
+
 文字列の配列。
 各文字列はcarrierが持つスキルを表す。
 [stop](#stop)が要求するskillと対応する。
@@ -105,17 +107,20 @@ carrierの中でユニークなID。
 ### break
 
 *object*
+
 carrierがとる休憩に関する情報。
 
 #### type
 
 *string*
+
 休憩の指定方法。
 `"none"` または `"range"`
 
 #### ranges
 
 *array*
+
 rangeの配列。
 typeにrangeを指定した場合に必要。
 各rangeは休憩を取ることができる期間を表し、 `readyTime` と `dueTime` を持つ。
@@ -123,16 +128,19 @@ typeにrangeを指定した場合に必要。
 - readyTime
 
 *integer*
+
 期間の開始時刻。
 
 - dueTime
 
 *integer*
+
 期間の終了時刻。
 
 #### duration
 
 *integer*
+
 休憩をとる期間の長さ。
 
 
