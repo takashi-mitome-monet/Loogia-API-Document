@@ -90,7 +90,7 @@
     ],
     "stops": [
         {
-            "id": 1,
+            "id": "stop1",
             "geocodes": [
                 {
                     "lat": 35.163891,
