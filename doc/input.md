@@ -63,7 +63,8 @@
 
 |type|種類|
 |--|--|
-|aws-s3|AWS S3 (Simple Storage Service)|
+|aws-s3|AWS S3|
+|local|ソルバーが動作するOS上のローカルファイル|
 
 #### bucket
 
@@ -78,6 +79,13 @@ typeに `"aws-s3"` を指定した場合に必須。
 
 typeに `"aws-s3"` を指定した場合に必須。
 保存先のS3のキー名を指定する。
+
+#### path
+
+*string*
+
+typeに `"local"` を指定した場合に必須。
+保存先の絶対パスを指定する。
 
 ### mapModuleOption
 
