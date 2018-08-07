@@ -9,6 +9,7 @@
         "type": "aws-s3",
         "bucket": "loogia-output",
         "key": "optimind/20181001/aw4o5ifujaltr.json"
+        "meta": {}, //エクスポート先にそのまま返して欲しい値、なんでも入れることができる
     },
     "mapModuleOption": { // 地図エンジンにそのまま渡す (キー名は要相談)
     },
