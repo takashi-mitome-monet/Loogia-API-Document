@@ -144,9 +144,23 @@
                 "departure": 84
             },
             "encodedpolyline": "or{uEyoubYGiBhAGjAIhAGSaG",
-            "index": 0,
-            "from": 1,
-            "to": 2
+            "pathIndex": 0,
+            "from": {
+                "stopId": "depot1",
+                "parkingLocationIndex": 0,
+                "geocode": {
+                    "lat": 35.172520,
+                    "lng": 136.882607
+                }
+            }
+            "to": {
+                "stopId": "stop1",
+                "parkingLocationIndex": 0,
+                "geocode": {
+                    "lat": 35.163891,
+                    "lng": 136.962617
+                }
+            }
         },
         {
             "duration": 87,
@@ -156,33 +170,23 @@
                 "departure": 264
             },
             "encodedpolyline": "or{uEyoubYFlBjAGQwEjAIhAGSaG",
-            "index": 1,
-            "from": 1,
-            "to": 2
-        },
-        {
-            "duration": 142,
-            "distance": 1350.4438528066134,
-            "heading": {
-                "arrival": 84,
-                "departure": 228
-            },
-            "encodedpolyline": "mrzuEmwubYhAbBjC~DKJmC}DyCsEyAyBI@aBL_BJiCLiAHoAFeAFE?iAD_@@i@DeAFG@iAFmAHR`GNvEnAIGmB",
-            "index": 1,
-            "from": 0,
-            "to": 1
-        },
-        {
-            "duration": 69,
-            "distance": 291.04125610657695,
-            "heading": {
-                "arrival": 264,
-                "departure": 264
-            },
-            "encodedpolyline": "kl{uE_|ubYR`GiAFkAHiAFFhB",
-            "index": 0,
-            "from": 2,
-            "to": 1
+            "pathIndex": 0,
+            "from": {
+                "stopId": "stop1",
+                "parkingLocationIndex": 0,
+                "geocodes": {
+                    "lat": 35.163891,
+                    "lng": 136.962617
+                }
+            }
+            "to": {
+                "stopId": "depot1",
+                "parkingLocationIndex": 0,
+                "geocodes": {
+                    "lat": 35.172520,
+                    "lng": 136.882607
+                }
+            }
         }
     ]
 }
