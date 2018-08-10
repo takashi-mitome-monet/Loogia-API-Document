@@ -63,7 +63,7 @@
                 "ranges": [
                     {
                         "readyTime": 1513954800,
-                        "dueTime": 1513956000,
+                        "dueTime": 1513956000
                     }
                 ],
                 "duration": 600
@@ -135,57 +135,51 @@
             "uturnCost": 60
         }
     ],
-    "matrix": [
+    "paths": [
         {
             "duration": 69,
             "distance": 291.04125610657695,
-            "heading": {
-                "arrival": 84,
-                "departure": 84
-            },
-            "encodedpolyline": "or{uEyoubYGiBhAGjAIhAGSaG",
-            "pathIndex": 0,
+            "encodedPolyline": "or{uEyoubYGiBhAGjAIhAGSaG",
             "from": {
                 "stopId": "depot1",
                 "parkingLocationIndex": 0,
                 "geocode": {
                     "lat": 35.172520,
                     "lng": 136.882607
-                }
-            }
+                },
+                "heading": 84
+            },
             "to": {
                 "stopId": "stop1",
                 "parkingLocationIndex": 0,
                 "geocode": {
                     "lat": 35.163891,
                     "lng": 136.962617
-                }
+                },
+                "heading": 84
             }
         },
         {
             "duration": 87,
             "distance": 393.1967367288687,
-            "heading": {
-                "arrival": 84,
-                "departure": 264
-            },
-            "encodedpolyline": "or{uEyoubYFlBjAGQwEjAIhAGSaG",
-            "pathIndex": 0,
+            "encodedPolyline": "or{uEyoubYFlBjAGQwEjAIhAGSaG",
             "from": {
                 "stopId": "stop1",
                 "parkingLocationIndex": 0,
                 "geocodes": {
                     "lat": 35.163891,
                     "lng": 136.962617
-                }
-            }
+                },
+                "heading": 84
+            },
             "to": {
                 "stopId": "depot1",
                 "parkingLocationIndex": 0,
                 "geocodes": {
                     "lat": 35.172520,
                     "lng": 136.882607
-                }
+                },
+                "heading": 264
             }
         }
     ]
