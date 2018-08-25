@@ -11,7 +11,8 @@
         "key": "optimind/20181001/aw4o5ifujaltr.json"
         "meta": {}, //エクスポート先にそのまま返して欲しい値、なんでも入れることができる
     },
-    "mapModuleOption": { // 地図エンジンにそのまま渡す (キー名は要相談)
+    "mapModuleOption": { // 地図エンジンの設定
+        "multipleHeadings": true
     },
     "depots": [
         {
