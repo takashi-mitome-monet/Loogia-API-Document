@@ -1,10 +1,10 @@
 {
     "meta": {},
-    "error": {
+    "error": { //エラーでない場合はnull
         "message": "invalid JSON format",
         "status": 400
     },
-    "solution": {
+    "solution": { //解が無い場合は空のオブジェクト
         "carriers": [
             {
                 "id": "carrier1",
