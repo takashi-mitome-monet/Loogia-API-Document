@@ -1,5 +1,6 @@
 {
     "calculationTime": 10,
+    "restrictUturn": true,
     "callback": { // セキュリティ上の理由からLoogiaのフロントからのみ受け付ける
         "url": "https://google.com",
         "meta": {}, //コールバック先にそのまま返して欲しい値、なんでも入れることができる
@@ -12,7 +13,7 @@
         "meta": {}, //エクスポート先にそのまま返して欲しい値、なんでも入れることができる
     },
     "mapModuleOption": { // 地図エンジンの設定
-        "multipleHeadings": true
+        "restrictTurnRight": false
     },
     "depots": [
         {
