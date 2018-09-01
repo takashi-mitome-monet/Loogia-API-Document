@@ -68,6 +68,8 @@
                         "dueTime": 1513956000
                     }
                 ],
+                "penaltyCoefficient": 10.0,
+                "priority": 1,
                 "duration": 600
             },
             "startLocation": {
