@@ -136,7 +136,7 @@
             "skills": [
                 "veteran"
             ],
-            "uturnCost": 60
+            "uTurnCost": 60
         }
     ],
     "paths": [
