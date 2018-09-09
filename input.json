@@ -186,6 +186,32 @@
                 "heading": 264
             }
         }
-    ]
+    ],
+    "initialSolution": {
+        "carriers": [
+            {
+                "id": "carrierId1",
+                "route": [
+                    {
+                        "id": "depot1",
+                        "arrivalTime": 1513954800.0,
+                        "startTime": 1513954800.0,
+                    },
+                    {
+                        "id": "stop1",
+                        "arrivalTime": 1513956000.0,
+                        "startTime": 1513956000.0,
+                        "break": {
+                            "startTime": 1513956000,
+                        }
+                    },
+                    {
+                        "id": "depot1",
+                        "arrivalTime": 1513960080,
+                    }
+                ]
+            }
+        ]
+    }
 }
 
