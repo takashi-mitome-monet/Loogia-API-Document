@@ -1,10 +1,11 @@
-# RoutingEngine-IO
-Input/Output definition for Optimind Routing Engines
+# Loogia-API-Document
 
 ## input.json
 
 Web等のインターフェースからエンジン向けへ投げるデータ．
 Webとエンジンの間の翻訳モジュールがこれを解釈してエンジンごとに必要な形式へ変換する．
+
+詳細なドキュメントは[wiki](https://github.com/Optimind-llc/Loogia-API-Document/wiki/Input.json)を参照．
 
 ## output.json
 
