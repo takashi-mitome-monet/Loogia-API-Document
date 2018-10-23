@@ -2,7 +2,7 @@
     "meta": {},
     "error": { //エラーでない場合はnull
         "message": "invalid JSON format",
-        "status": 400
+        "code": 1000
     },
     "solution": { //解が無い場合は空のオブジェクト
         "carriers": [
