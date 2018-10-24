@@ -11,3 +11,5 @@ Webとエンジンの間の翻訳モジュールがこれを解釈してエン�
 
 エンジンからWeb等へ返すデータ．
 Webとエンジンの間の翻訳モジュールがエンジンの出力からこれを生成する．
+
+エラーについての詳細なドキュメントは[wiki](https://github.com/Optimind-llc/Loogia-API-Document/wiki/error)を参照．
