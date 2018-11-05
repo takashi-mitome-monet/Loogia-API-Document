@@ -2,15 +2,30 @@
     "calculationTime": 10,
     "restrictUturn": true,
     "callback": { // セキュリティ上の理由からLoogiaのフロントからのみ受け付ける
-        "url": "https://google.com",
-        "meta": {}, //コールバック先にそのまま返して欲しい値、なんでも入れることができる
-        "headers": {} //コールバック先にそのままヘッダーとして渡す
+        "createResult": {
+            "url": "https://example.com/result",
+            "meta": {}, //コールバック先にそのまま返して欲しい値、なんでも入れることができる
+            "headers": {} //コールバック先にそのままヘッダーとして渡す
+        },
+        "updateProgress": {
+            "url": "https://example.com/progress",
+            "meta": {}, //コールバック先にそのまま返して欲しい値、なんでも入れることができる
+            "headers": {} //コールバック先にそのままヘッダーとして渡す
+        }
     },
     "export": { // 結果の出力先を指定
-        "type": "aws-s3",
-        "bucket": "loogia-output",
-        "key": "optimind/20181001/aw4o5ifujaltr.json"
-        "meta": {}, //エクスポート先にそのまま返して欲しい値、なんでも入れることができる
+        "createResult": {
+            "type": "aws-s3",
+            "bucket": "loogia-output",
+            "key": "optimind/20181001/aw4o5ifujaltr/result.json"
+            "meta": {}, //エクスポート先にそのまま返して欲しい値、なんでも入れることができる
+        },
+        "updateProgress": {
+            "type": "aws-s3",
+            "bucket": "loogia-output",
+            "key": "optimind/20181001/aw4o5ifujaltr/progress.json"
+            "meta": {}, //エクスポート先にそのまま返して欲しい値、なんでも入れることができる
+        }
     },
     "mapModuleOption": { // 地図エンジンの設定
         "restrictTurnRight": false
