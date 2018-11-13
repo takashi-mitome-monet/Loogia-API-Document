@@ -1,4 +1,6 @@
 {
+    "async": true,
+    "version": "5",
     "calculationTime": 10,
     "restrictUturn": true,
     "callback": { // セキュリティ上の理由からLoogiaのフロントからのみ受け付ける
