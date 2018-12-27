@@ -1,0 +1,251 @@
+{
+    "async": true,
+    "calculationTime": 10,
+    "restrictUturn": true,
+    "callback": { // セキュリティ上の理由からLoogiaのフロントからのみ受け付ける
+        "createResult": {
+            "url": "https://example.com/result",
+            "meta": {}, //コールバック先にそのまま返して欲しい値、なんでも入れることができる
+            "headers": {} //コールバック先にそのままヘッダーとして渡す
+        },
+        "updateProgress": {
+            "url": "https://example.com/progress",
+            "meta": {}, //コールバック先にそのまま返して欲しい値、なんでも入れることができる
+            "headers": {} //コールバック先にそのままヘッダーとして渡す
+        }
+    },
+    "export": { // 結果の出力先を指定
+        "createResult": {
+            "type": "aws-s3",
+            "bucket": "loogia-output",
+            "key": "optimind/20181001/aw4o5ifujaltr/result.json"
+            "meta": {}, //エクスポート先にそのまま返して欲しい値、なんでも入れることができる
+        },
+        "updateProgress": {
+            "type": "aws-s3",
+            "bucket": "loogia-output",
+            "key": "optimind/20181001/aw4o5ifujaltr/progress.json"
+            "meta": {}, //エクスポート先にそのまま返して欲しい値、なんでも入れることができる
+        }
+    },
+    "mapModuleOption": { // 地図エンジンの設定
+        "restrictTurnRight": false
+    },
+    "depots": [
+        {
+            "id": "depot1",
+            "geocode": {
+                "lat": 35.172520,
+                "lng": 136.882607
+            }
+        }
+    ],
+    "carriers": [
+        {
+            "id": "carrierId1",
+            "skills": [
+                "veteran", //Driver由来
+                "cold" //Vehicle由来
+            ],
+            "break": {
+                "type": "none"
+            },
+            "startLocation": {
+                "id": "depot1",
+                "time": 1513954800
+            },
+            "endLocation": {
+                "id": "depot1",
+                "time": 1513972800
+            },
+            "capacities": [
+                {
+                    "dimId": 0,
+                    "size": 100000
+                }
+            ],
+            "cost": {
+                "fixed": 0.0,
+                "distance": 0.0,
+                "duration": 1.0
+            }
+        },
+        {
+            "id": "carrierId2",
+            "skills": [
+                "veteran", //Driver由来
+                "cold" //Vehicle由来
+            ],
+            "break": {
+                "type": "range",
+                "ranges": [
+                    {
+                        "readyTime": 1513954800,
+                        "dueTime": 1513956000
+                    }
+                ],
+                "penaltyCoefficient": 10.0,
+                "priority": 1,
+                "duration": 600
+            },
+            "startLocation": {
+                "id": "depot1",
+                "time": 1513954800
+            },
+            "endLocation": {
+                "id": "depot1",
+                "time": 1513972800
+            },
+            "capacities": [
+                {
+                    "dimId": 0,
+                    "size": 100000
+                }
+            ],
+            "cost": {
+                "fixed": 0.0,
+                "distance": 0.0,
+                "duration": 1.0
+            }
+        }
+    ],
+    "spots": [
+        {
+            "id": "spot01",
+            "locations": [
+                {
+                    "geocode": {
+                        "lat": 35.163891,
+                        "lng": 136.962617
+                    },
+                    "uTurnCost": 10000
+                },
+                {
+                    "geocode": {
+                        "lat": 35.164852,
+                        "lng": 136.962009
+                    },
+                    "uTurnCost": 10000
+                }
+            ]
+        }
+    ]
+    "jobs": [
+        {
+            "jobId": "job1",
+            "pickup": {
+                "spotId": "spot01",
+                "timeWindow": {
+                    "type": "range",
+                    "ranges": [
+                        {
+                            "readyTime": 1514854800,
+                            "dueTime": 1514858400,
+                            "gradient": 2,
+                            "margin": {
+                                "early": 600,
+                                "late": 600
+                            }
+                        }
+                    ]
+                },
+                "serviceDuration": {
+                    "general": 120,
+                    "before": {
+                        "1": 30
+                    }
+                }
+            },
+            "delivery": null,
+            "demands": [
+                {
+                    "dimId": 0,
+                    "size": 1
+                }
+            ],
+            "priority": 0,
+            "skills": [
+                "veteran"
+            ],
+        }
+    ],
+    "paths": [
+        {
+            "duration": 69,
+            "distance": 291.04125610657695,
+            "encodedPolyline": "or{uEyoubYGiBhAGjAIhAGSaG",
+            "from": {
+                "spotId": "depot1",
+                "parkingLocationIndex": 0,
+                "geocode": {
+                    "lat": 35.172520,
+                    "lng": 136.882607
+                },
+                "heading": 84
+            },
+            "to": {
+                "spotId": "stop1",
+                "parkingLocationIndex": 0,
+                "geocode": {
+                    "lat": 35.163891,
+                    "lng": 136.962617
+                },
+                "heading": 84
+            }
+        },
+        {
+            "duration": 87,
+            "distance": 393.1967367288687,
+            "encodedPolyline": "or{uEyoubYFlBjAGQwEjAIhAGSaG",
+            "from": {
+                "spotId": "stop1",
+                "parkingLocationIndex": 0,
+                "geocodes": {
+                    "lat": 35.163891,
+                    "lng": 136.962617
+                },
+                "heading": 84
+            },
+            "to": {
+                "spotId": "depot1",
+                "parkingLocationIndex": 0,
+                "geocodes": {
+                    "lat": 35.172520,
+                    "lng": 136.882607
+                },
+                "heading": 264
+            }
+        }
+    ],
+    "initialSolution": {
+        "carriers": [
+            {
+                "id": "carrierId1",
+                "route": [
+                    {
+                        "id": "depot1",
+                        "serviceType": "start",
+                        "arrivalTime": 1513954800.0,
+                        "startTime": 1513954800.0,
+                    },
+                    {
+                        "id": "job1",
+                        "serviceType": "pickup",
+                        "arrivalTime": 1513956000.0,
+                        "startTime": 1513956000.0,
+                        "break": {
+                            "startTime": 1513956000,
+                            "duration": 300
+                        }
+                    },
+                    {
+                        "id": "depot1",
+                        "serviceType": "end",
+                        "arrivalTime": 1513960080,
+                    }
+                ]
+            }
+        ],
+        "unassignedJobs": []
+    }
+}
