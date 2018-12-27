@@ -111,7 +111,7 @@
     ],
     "spots": [
         {
-            "id": "spot01",
+            "id": "spot1",
             "locations": [
                 {
                     "geocode": {
@@ -134,7 +134,7 @@
         {
             "jobId": "job1",
             "pickup": {
-                "spotId": "spot01",
+                "spotId": "spot1",
                 "timeWindow": {
                     "type": "range",
                     "ranges": [
@@ -184,7 +184,7 @@
                 "heading": 84
             },
             "to": {
-                "spotId": "stop1",
+                "spotId": "spot1",
                 "parkingLocationIndex": 0,
                 "geocode": {
                     "lat": 35.163891,
@@ -198,7 +198,7 @@
             "distance": 393.1967367288687,
             "encodedPolyline": "or{uEyoubYFlBjAGQwEjAIhAGSaG",
             "from": {
-                "spotId": "stop1",
+                "spotId": "spot1",
                 "parkingLocationIndex": 0,
                 "geocodes": {
                     "lat": 35.163891,
