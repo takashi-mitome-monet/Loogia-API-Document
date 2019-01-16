@@ -2,6 +2,7 @@
     "async": true,
     "calculationTime": 10,
     "restrictUturn": true,
+    "ignoreReturnTrip": false,
     "callback": { // セキュリティ上の理由からLoogiaのフロントからのみ受け付ける
         "createResult": {
             "url": "https://example.com/result",
