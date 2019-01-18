@@ -68,7 +68,9 @@
             "cost": {
                 "fixed": 0.0,
                 "distance": 0.0,
-                "duration": 1.0
+                "duration": 1.0,
+                "serviceTime": 1.0,
+                "waitingTime": 0.9
             }
         },
         {
@@ -106,7 +108,9 @@
             "cost": {
                 "fixed": 0.0,
                 "distance": 0.0,
-                "duration": 1.0
+                "duration": 1.0,
+                "serviceTime": 1.0,
+                "waitingTime": 0.9
             }
         }
     ],
