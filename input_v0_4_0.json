@@ -139,6 +139,7 @@
         {
             "jobId": "job1",
             "pickup": {
+                "id": "pickup1",
                 "spotId": "spot1",
                 "timeWindow": {
                     "type": "range",
