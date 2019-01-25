@@ -71,7 +71,8 @@
                 "duration": 1.0,
                 "serviceTime": 1.0,
                 "waitingTime": 0.9
-            }
+            },
+            "numberOfFixedFirstPoints": 3
         },
         {
             "id": "carrierId2",
@@ -111,7 +112,8 @@
                 "duration": 1.0,
                 "serviceTime": 1.0,
                 "waitingTime": 0.9
-            }
+            },
+            "numberOfFixedFirstPoints": 3
         }
     ],
     "spots": [
