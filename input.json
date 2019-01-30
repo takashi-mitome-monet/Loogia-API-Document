@@ -145,6 +145,9 @@
             ],
             "serviceDuration": {
                 "general": 120,
+                "after": {
+                    "depot1": 30
+                },
                 "before": {
                     "1": 30
                 }
