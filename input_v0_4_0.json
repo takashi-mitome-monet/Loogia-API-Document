@@ -30,7 +30,8 @@
         }
     },
     "mapModuleOption": { // 地図エンジンの設定
-        "restrictTurnRight": false
+        "restrictTurnRight": false,
+        "allowHighway": "Always|OnFirstLeg|OnLastLeg|OnFirstAndLastLeg|Never",
     },
     "depots": [
         {
@@ -134,7 +135,8 @@
                     },
                     "uTurnCost": 10000
                 }
-            ]
+            ],
+            "forceTargetLeft": false
         }
     ],
     "jobs": [
