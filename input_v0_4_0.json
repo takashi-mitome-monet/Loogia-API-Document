@@ -31,7 +31,7 @@
     },
     "mapModuleOption": { // 地図エンジンの設定
         "restrictTurnRight": false,
-        "allowHighway": "Always|OnFirstLeg|OnLastLeg|OnFirstAndLastLeg|Never",
+        "allowHighway": "Always|OnFirstLeg|OnLastLeg|OnFirstAndLastLegs|Never",
     },
     "depots": [
         {
