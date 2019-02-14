@@ -1,3 +1,5 @@
+# timeWindow
+
 訪問可能時間を指定する情報。
 
 ## type
