@@ -1,4 +1,4 @@
-# Loogia-API-Document (v0.4)
+# Loogia-API-Document (v1)
 
 ## input.json
 
