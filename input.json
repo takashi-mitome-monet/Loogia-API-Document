@@ -3,6 +3,10 @@
     "calculationTime": 10,
     "restrictUturn": true,
     "ignoreReturnTrip": false,
+    "balancing": {
+        "type": "duration",
+        "intensity": 3
+    },
     "callback": { // セキュリティ上の理由からLoogiaのフロントからのみ受け付ける
         "createResult": {
             "url": "https://example.com/result",
