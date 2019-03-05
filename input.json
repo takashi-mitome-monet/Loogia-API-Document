@@ -3,7 +3,7 @@
     "calculationTime": 10,
     "restrictUturn": true,
     "ignoreReturnTrip": false,
-    "callback": { // セキュリティ上の理由からLoogiaのフロントからのみ受け付ける
+    "callback": { // 利用不可
         "createResult": {
             "url": "https://example.com/result",
             "meta": {}, //コールバック先にそのまま返して欲しい値、なんでも入れることができる
@@ -15,7 +15,7 @@
             "headers": {} //コールバック先にそのままヘッダーとして渡す
         }
     },
-    "export": { // 結果の出力先を指定
+    "export": { // 利用不可
         "createResult": {
             "type": "aws-s3",
             "bucket": "loogia-output",
@@ -28,10 +28,6 @@
             "key": "optimind/20181001/aw4o5ifujaltr/progress.json"
             "meta": {}, //エクスポート先にそのまま返して欲しい値、なんでも入れることができる
         }
-    },
-    "mapModuleOption": { // 地図エンジンの設定
-        "restrictTurnRight": false,
-        "allowHighway": "Always|OnFirstLeg|OnLastLeg|OnFirstAndLastLegs|Never",
     },
     "depots": [
         {
@@ -72,8 +68,7 @@
                 "duration": 1.0,
                 "serviceTime": 1.0,
                 "waitingTime": 0.9
-            },
-            "numberOfFixedFirstPoints": 3
+            }
         },
         {
             "id": "carrierId2",
@@ -89,8 +84,6 @@
                         "dueTime": 1513956000
                     }
                 ],
-                "penaltyCoefficient": 10.0,
-                "priority": 1,
                 "duration": 600
             },
             "startLocation": {
@@ -113,8 +106,7 @@
                 "duration": 1.0,
                 "serviceTime": 1.0,
                 "waitingTime": 0.9
-            },
-            "numberOfFixedFirstPoints": 3
+            }
         }
     ],
     "spots": [
@@ -132,6 +124,26 @@
                     "geocode": {
                         "lat": 35.164852,
                         "lng": 136.962009
+                    },
+                    "uTurnCost": 10000
+                }
+            ],
+            "forceTargetLeft": false
+        },
+        {
+            "id": "spot2",
+            "locations": [
+                {
+                    "geocode": {
+                        "lat": 35.163952,
+                        "lng": 136.97329
+                    },
+                    "uTurnCost": 10000
+                },
+                {
+                    "geocode": {
+                        "lat": 35.164003,
+                        "lng": 136.97491
                     },
                     "uTurnCost": 10000
                 }
@@ -162,11 +174,65 @@
                 "serviceDuration": {
                     "general": 120,
                     "before": {
-                        "1": 30
+                        "pickup2": 30
                     }
                 }
             },
             "delivery": null,
+            "demands": [
+                {
+                    "dimId": 0,
+                    "size": 1
+                }
+            ],
+            "priority": 0,
+            "skills": [
+                "veteran"
+            ],
+        },
+        {
+            "jobId": "job2",
+            "pickup": {
+                "id": "pickup2",
+                "spotId": "spot1",
+                "timeWindow": {
+                    "type": "range",
+                    "ranges": [
+                        {
+                            "readyTime": 1514854800,
+                            "dueTime": 1514858400,
+                            "gradient": 2,
+                            "margin": {
+                                "early": 600,
+                                "late": 600
+                            }
+                        }
+                    ]
+                },
+                "serviceDuration": {
+                    "general": 120,
+                    "before": {
+                        "1": 30
+                    }
+                }
+            },
+            "delivery":  {
+                "id": "delivery2",
+                "spotId": "spot2",
+                "timeWindow": {
+                    "type": "range",
+                    "ranges": [
+                        {
+                            "readyTime": 1514854800,
+                            "dueTime": 1514858400,
+                            "margin": {
+                                "early": 600,
+                                "late": 600
+                            }
+                        }
+                    ]
+                },
+            ],
             "demands": [
                 {
                     "dimId": 0,
