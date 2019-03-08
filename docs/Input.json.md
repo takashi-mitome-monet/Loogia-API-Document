@@ -19,21 +19,20 @@ Input.jsonの各キーが取る値についての解説。
 *boolean*
 
 計算を非同期で実行するかどうか。
-非同期（`true`）の場合，リクエストがサーバーに渡った時点で200が返る。
+非同期（`true`）の場合、リクエストがサーバーに渡った時点で200が返る。
 ただしこの時点で200が返っても計算が成功することを保証するものではない。
 
-同期（`false`）の場合，計算結果がbodyに入れられて返る。
+同期（`false`）の場合、計算結果がbodyに入れられて返る。
 ただしHTTP通信が30秒でタイムアウトする。
 
 何も指定しない場合は同期（`false`）として動作する。
 
-## version
+## restrictUturn
 
-*string*
+*boolean*
 
-最適化エンジンのバージョンを指定する。
-バージョン番号やステージ（`dev`, `prod`）などを指定可能。
-何も指定しない場合はAPIのURLで指定されたステージで実行される。
+Uターンコストを考慮するかどうか。
+考慮する（`true`）場合、各spotに設定された`uTurnCost`が有効となり、Uターンコストを加味したルートを探索する。
 
 ## balancing
 
@@ -80,7 +79,7 @@ carrierにcostを設定していても無視され、常に時間の最小化を
 *object*
 
 callback先の情報。
-createResultは計算結果を通知する先，updateProgressは計算過程を通知する先。
+createResultは計算結果を通知する先、updateProgressは計算過程を通知する先。
 
 #### url\*
 
@@ -107,7 +106,7 @@ createResultは計算結果を通知する先，updateProgressは計算過程を
 *object*
 
 export先の情報。
-createResultは計算結果を通知する先，updateProgressは計算過程を通知する先。
+createResultは計算結果を通知する先、updateProgressは計算過程を通知する先。
 
 #### type\*
 
@@ -196,7 +195,7 @@ typeに `"local"` を指定した場合に必須。
 *array*
 
 [job](job.md)の配列。
-制約，コストによってはここで指定したすべてのjobがルートに組み込まれるとは限らない。
+制約、コストによってはここで指定したすべてのjobがルートに組み込まれるとは限らない。
 ルートに組み込まれなかったjobはunassignedJobsとして[Output.json](Output.json.md)に出力される。
 
 ## paths\*
