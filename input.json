@@ -1,34 +1,7 @@
 {
     "async": true,
-    "calculationTime": 10,
     "restrictUturn": true,
     "ignoreReturnTrip": false,
-    "callback": { // 利用不可
-        "createResult": {
-            "url": "https://example.com/result",
-            "meta": {}, //コールバック先にそのまま返して欲しい値、なんでも入れることができる
-            "headers": {} //コールバック先にそのままヘッダーとして渡す
-        },
-        "updateProgress": {
-            "url": "https://example.com/progress",
-            "meta": {}, //コールバック先にそのまま返して欲しい値、なんでも入れることができる
-            "headers": {} //コールバック先にそのままヘッダーとして渡す
-        }
-    },
-    "export": { // 利用不可
-        "createResult": {
-            "type": "aws-s3",
-            "bucket": "loogia-output",
-            "key": "optimind/20181001/aw4o5ifujaltr/result.json"
-            "meta": {}, //エクスポート先にそのまま返して欲しい値、なんでも入れることができる
-        },
-        "updateProgress": {
-            "type": "aws-s3",
-            "bucket": "loogia-output",
-            "key": "optimind/20181001/aw4o5ifujaltr/progress.json"
-            "meta": {}, //エクスポート先にそのまま返して欲しい値、なんでも入れることができる
-        }
-    },
     "depots": [
         {
             "id": "depot1",
@@ -128,7 +101,6 @@
                     "uTurnCost": 10000
                 }
             ],
-            "forceTargetLeft": false
         },
         {
             "id": "spot2",
@@ -163,7 +135,6 @@
                         {
                             "readyTime": 1514854800,
                             "dueTime": 1514858400,
-                            "gradient": 2,
                             "margin": {
                                 "early": 600,
                                 "late": 600

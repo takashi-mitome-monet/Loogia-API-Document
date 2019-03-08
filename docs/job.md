@@ -1,6 +1,12 @@
 # job
 
 配送・集荷などの業務を表す情報。
+物を運んで欲しいというひとつひとつの注文に相当する。
+主に`pickup`と`delivery`というキーにより表現される。
+
+宅配のようにデポから荷物を運ぶという注文については、荷物を降ろす作業についての情報を`delivery`に記載し、`pickup`はnullとする。
+逆に荷物をデポへ運ぶという注文については、荷物を積む作業についての情報を`pickup`に記載し、`delivery`はnullとする。
+デポ以外のある場所からある場所へ荷物を運ぶという注文については、`pickup`と`delivery`の双方を記載する。
 
 ## jobId\*
 
@@ -8,22 +14,11 @@
 
 jobのID。
 
-## jobType
-
-*string*
-
-jobの業務種別を表す情報。`"pickup"`, `"delivery"`, `"pickupDelivery"`のうち、いずれかが割り当てられる。
-
-* pickup: 特定の訪問先からデポに荷物を運ぶ業務
-* delivery: デポから特定の訪問先に荷物を運ぶ業務
-* pickupDelivery: 特定の訪問先から特定の訪問先に荷物を運ぶ業務
-
 ## pickup\*
 
 *object*
 
-jobTypeがpickupまたはpickupDeliveryである場合に与えられる情報。
-jobTypeがdeliveryである場合はnullとする。
+集荷に関する情報を表すオブジェクト。
 
 ### id\*
 
@@ -102,14 +97,14 @@ deliveryのID。
 
 *array*
 
-訪問することで消費するcarrierの容量。
+荷物を積むことで消費するcarrierの容量。
 [carrier](carrier.md)のcapacityに対応する。
 
 ### dimensionId\*
 
 *integer (≧0)*
 
-要求量の種類を表すID。
+容量の種類を表すID。
 [carrier](carrier.md)が持つcapacityのIDと対応する。
 どのcarrierも持っていないIDを指定するとエラーとなる。
 
@@ -117,4 +112,4 @@ deliveryのID。
 
 *integer (≧0)*
 
-消費する容量。
+消費する量。

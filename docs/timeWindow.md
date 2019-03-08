@@ -29,12 +29,6 @@ typeにrangeを指定した場合に必要。
 
 訪問可能時間帯の終了時刻。
 
-### gradient
-
-*integer (≧0)*
-
-readyTimeからdueTimeの中で早く訪問したい場合に0より大きい値を指定する。
-
 ## margin
 
 *object*

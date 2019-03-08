@@ -19,22 +19,23 @@ Input.jsonの各キーが取る値についての解説。
 *boolean*
 
 計算を非同期で実行するかどうか。
-非同期（`true`）の場合，リクエストがサーバーに渡った時点で200が返る。
+非同期（`true`）の場合、リクエストがサーバーに渡った時点で200が返る。
 ただしこの時点で200が返っても計算が成功することを保証するものではない。
 
-同期（`false`）の場合，計算結果がbodyに入れられて返る。
+同期（`false`）の場合、計算結果がbodyに入れられて返る。
 ただしHTTP通信が30秒でタイムアウトする。
 
 何も指定しない場合は同期（`false`）として動作する。
 
-## version
+## restrictUturn
 
-*string*
+*boolean*
 
-最適化エンジンのバージョンを指定する。
-バージョン番号やステージ（`dev`, `prod`）などを指定可能。
-何も指定しない場合はAPIのURLで指定されたステージで実行される。
+Uターンコストを考慮するかどうか。
+考慮する（`true`）場合、各spotに設定された`uTurnCost`が有効となり、Uターンコストを加味したルートを探索する。
+考慮しない（`false`）場合、各spotに設定された`uTurnCost`は無視される。
 
+<!--
 ## balancing
 
 *object*
@@ -53,6 +54,7 @@ Input.jsonの各キーが取る値についての解説。
 *integer (1~10)*
 
 均等化の効き具合。値が大きいほど強く均等化する。指定しない場合、エンジン内部でのデフォルト値（intensity=3）で均等化する。
+-->
 
 ## ignoreReturnTrip
 
@@ -62,13 +64,17 @@ Input.jsonの各キーが取る値についての解説。
 `true` を指定するとデポへの帰り道を考えずに最適化計算が行われる。
 carrierにcostを設定していても無視され、常に時間の最小化を目的として最適化される。
 
+<!--
 ## calculationTime
 
-*real (≧0)*
+*real*
 
 最適化の計算時間（秒）。
 レスポンスまでにかかる時間ではない。
+負の値を設定するとシステム側で自動的に設定される。
+-->
 
+<!--
 ## callback
 
 *object*
@@ -80,7 +86,7 @@ carrierにcostを設定していても無視され、常に時間の最小化を
 *object*
 
 callback先の情報。
-createResultは計算結果を通知する先，updateProgressは計算過程を通知する先。
+createResultは計算結果を通知する先、updateProgressは計算過程を通知する先。
 
 #### url\*
 
@@ -95,7 +101,9 @@ createResultは計算結果を通知する先，updateProgressは計算過程を
 ### headers
 
 コールバック先に返すヘッダ。
+-->
 
+<!--
 ## export
 
 *object*
@@ -107,7 +115,7 @@ createResultは計算結果を通知する先，updateProgressは計算過程を
 *object*
 
 export先の情報。
-createResultは計算結果を通知する先，updateProgressは計算過程を通知する先。
+createResultは計算結果を通知する先、updateProgressは計算過程を通知する先。
 
 #### type\*
 
@@ -119,7 +127,7 @@ createResultは計算結果を通知する先，updateProgressは計算過程を
 |type|種類|
 |:--|:--|
 |`aws-s3`|AWS S3（未対応）|
-|`local`|ソルバーが動作するOS上のローカルファイル|
+|`local`|エンジンが動作するOS上のローカルファイル|
 
 #### bucket
 
@@ -141,7 +149,9 @@ typeに `"aws-s3"` を指定した場合に必須。
 
 typeに `"local"` を指定した場合に必須。
 保存先の絶対パスを指定する。
+-->
 
+<!--
 ## mapModuleOption
 
 *object*
@@ -167,6 +177,7 @@ typeに `"local"` を指定した場合に必須。
 |`OnLastLeg`|最後の訪問先を出発してデポまでの経路上でのみ高速道路の使用を許可する|
 |`OnFirstAndLastLegs`|デポから出発して最初の訪問先までと最後の訪問先を出発してデポまでの経路上でのみ高速道路の使用を許可する|
 |`Never`|高速道路の使用を許可しない|
+-->
 
 ## carriers\*
 
@@ -196,7 +207,7 @@ typeに `"local"` を指定した場合に必須。
 *array*
 
 [job](job.md)の配列。
-制約，コストによってはここで指定したすべてのjobがルートに組み込まれるとは限らない。
+制約、コストによってはここで指定したすべてのjobがルートに組み込まれるとは限らない。
 ルートに組み込まれなかったjobはunassignedJobsとして[Output.json](Output.json.md)に出力される。
 
 ## paths\*
