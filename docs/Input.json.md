@@ -99,7 +99,7 @@ createResultは計算結果を通知する先、updateProgressは計算過程を
 
 *object*
 
-計算結果の出力先。
+【非公開】計算結果の出力先。
 
 ### createResult, updateProgress
 
@@ -113,7 +113,7 @@ createResultは計算結果を通知する先、updateProgressは計算過程を
 *string*
 
 出力先の種類。
-`"aws-s3"` と `"local"` を指定可能。
+`"aws-s3"` と `"aws-dynamodb"` と `"local"` を指定可能。
 
 |type|種類|
 |:--|:--|
@@ -127,12 +127,20 @@ createResultは計算結果を通知する先、updateProgressは計算過程を
 typeに `"aws-s3"` を指定した場合に必須。
 保存先のS3のバケット名を指定する。
 
+#### table
+
+*string*
+
+typeに `"aws-dynamodb"` を指定した場合に必須。
+保存先のDynamoDBのテーブル名を指定する。
+
 #### key
 
 *string*
 
-typeに `"aws-s3"` を指定した場合に必須。
-保存先のS3のキー名を指定する。
+typeに `"aws-s3"` または `"aws-dynamodb"` を指定した場合に必須。
+`"aws-s3"` の場合、保存先のS3のキー名を指定する。
+`"aws-dynamodb"` の場合、保存先のDynamoDBのkeyカラムの値を指定する。
 
 #### path
 
