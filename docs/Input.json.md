@@ -210,7 +210,7 @@ typeに `"local"` を指定した場合に必須。
 制約、コストによってはここで指定したすべてのjobがルートに組み込まれるとは限らない。
 ルートに組み込まれなかったjobはunassignedJobsとして[Output.json](Output.json.md)に出力される。
 
-## paths\*
+## paths
 
 *array*
 
