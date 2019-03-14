@@ -7,13 +7,12 @@
 |NoBodyError|there is no body|HTTPボディが存在しない|
 |RequestTimeoutMapError|map engine timeout, please reduce the number of stops or narrow area|地図エンジンにおいてタイムアウトが発生した|
 |UnknownMapError|unknown error in map engine|地図エンジンにおいて不明なエラーが発生した|
-|InvalidAsyncValueInputError|async must be boolean|asyncの値が真偽値ではない|
 |InvalidCalculationTimeValueInputError|calculationTime must be Integer|calculationTimeの値が整数ではない|
 |InvalidIgnoreReturnTripValueInputError|ignoreReturnTrip must be boolean|ignoreReturnTripの値が真偽値ではない|
-|InvalidVersionInputError|version must be string|versionの値が文字列ではない|
-|InvalidAsyncWithVersionInputError|async must be true if engine version specified|versionが指定されているがasyncがfalseである|
+|NoBalancingTypeValueInputError|balancing has no type|balancingオブジェクトにtypeが存在しない|
+|InvalidBalancingTypeValueInputError|balancing has invalid format type|balancingオブジェクトのtypeの形式が不正|
+|InvalidBalancingIntensityValueInputError|balancing has invalid format intensity|balancingオブジェクトのintensityの形式が不正|
 |NoCalculationTimeWithAsyncTrueInputError|calculationTime must be set if async is true|asyncがtrueであるがcalculationTimeが存在しない|
-|VersionNotFoundInputError|unknown engine version is specified|存在しないバージョンが指定された|
 |StopsAndSpotsCoexistInputError|stops and spots must not coexist in input|インプットにstopsキーとspotsキーの両方が存在する|
 |NoStopsOrSpotsInputError|input has neither stops nor spots|インプットにstopsキーとspotsキーの両方とも存在しない|
 |NoDepotInputError|input has no depot|depotが存在しない|
@@ -65,6 +64,7 @@
 |NoJobPickupReadyDueTimeInputError|pickup time window range has no readyTime or dueTime|pickupの時間枠のタイプがrangesだがrangeの中身が存在しない|
 |InvalidJobPickupReadyDueTimeValueInputError|pickup time window range has invalid readyTime or dueTime value|pickupの時間枠のreadyTimeまたはdueTimeの値が不正 (dueTimeの値がreadyTimeの値より小さいなど)|
 |InvalidJobPickupReadyDueTimeInputError|pickup time window range has invalid format readyTime or dueTime|pickupの時間枠のreadyTimeまたはdueTimeの形式が不正|
+|JobPickupReadyDueTimeOverlapError|pickup time windows overlap|pickupの時間枠が重なっている|
 |NoJobPickupServiceDurationInputError|pickup service duration is not set|pickupのserviceDurationが存在しない|
 |NoJobPickupServiceDurationGeneralInputError|pickup service duration (general) is not set|pickupのserviceDurationのgeneralが存在しない|
 |InvalidJobPickupServiceDurationInputError|pickup service duration (general) is invalid format|pickupのserviceDurationのgeneralの形式が不正|
@@ -73,6 +73,7 @@
 |NoJobDeliveryTimeWindowTypeInputError|delivery time window type is not set|deliveryの時間枠タイプが設定されていない|
 |InvalidJobDeliveryTimeWindowTypeInputError|delivery has invalid format time window type|deliveryの時間枠のタイプの形式が不正なものがある|
 |NoJobDeliveryTimeWindowRangeInputError|delivery time window ranges are not set|deliveryの時間枠のタイプがrangesだがrangeが存在しない|
+|JobDeliveryReadyDueTimeOverlapError|delivery time windows overlap|deliveryの時間枠が重なっている|
 |NoJobDeliveryReadyDueTimeInputError|delivery time window range has no readyTime or dueTime|deliveryの時間枠のタイプがrangesだがrangeの中身が存在しない|
 |InvalidJobDeliveryReadyDueTimeValueInputError|delivery time window range has invalid readyTime or dueTime value|deliveryの時間枠のreadyTimeまたはdueTimeの値が不正 (dueTimeの値がreadyTimeの値より小さいなど)|
 |InvalidJobDeliveryReadyDueTimeInputError|delivery time window range has invalid format readyTime or dueTime|deliveryの時間枠のreadyTimeまたはdueTimeの形式が不正|
@@ -84,7 +85,48 @@
 |InvalidJobDemandSizeInputError|job demand has invalid format size|jobのdemandのsizeの形式が不正|
 |NoJobDimIdInCarrierCapacityInputError|job dimId of demand is not exist in carrier capacity|jobのdemandのdimIdをcapacityとして持つcarrierが存在しない|
 |InvalidJobPriorityInputError|job priority is invalid format|jobのpriorityの形式が不正|
+|InvalidJobPriorityValueInputError|job priority has invalid value|jobのpriorityの値が不正|
 |InvalidJobSkillInputError|job skills is invalid format|jobのskillの形式が不正|
+|NoCarrierInputError|input has no carrier|carrierが１つも無い|
+|NoCarrierIdInputError|carrier has no id|carrierにIDが無いものがある|
+|InvalidCarrierIdInputError|carrier has invalid format id|carrieにIDの形式が不正なものがある|
+|NoCarrierCapacitySizeInputError|carrier capacity has no size|carrierのcapacityのsizeが設定されていない|
+|InvalidCarrierSkillInputError|carrier skills is invalid format (it must be a list of string)|carrierのskillの形式が不正|
+|NoCarrierBreakTypeInputError|carrier break type is not set|carrierのbreakの時間枠タイプが設定されていない|
+|InvalidCarrierBreakTypeInputError|carrier break has invalid format type|carrierのbreakの時間枠のタイプの形式が不正なものがある|
+|NoCarrierBreakRangeInputError|carrier break ranges are not set|carrierのbreakのタイプがrangesだがrangeが存在しない|
+|InvalidCarrierBreakTypeValueInputError|carrier break type has invalid value|carrierのbreakのtypeの値が不正|
+|InvalidCarrierBreakRangeInputError|carrier break range is invalid format|carrierのbreakのrangesの形式が不正|
+|CarrierBreakReadyDueTimeOverlapError|carrier break ranges overlap|carrierのbreakのrangeが重なっている|
+|NoCarrierBreakReadyDueTimeInputError|carrier break range has no readyTime or dueTime|carrierのbreakのタイプがrangeだがrangeの中身が存在しない|
+|InvalidCarrierBreakReadyDueTimeValueInputError|carrier break range has invalid readyTime or dueTime value|carrierのbreakのreadyTimeまたはdueTimeの値が不正 (値が負など)|
+|CarrierBreakDueTimeIsSmallerThanReadyTimeInputError|carrier break dueTime must be later than readyTime|carrierのbrakのdueTimeがreadyTimeより早い|
+|InvalidCarrierBreakReadyDueTimeInputError|carrier break range has invalid format readyTime or dueTime (it must be an integer)|carrierのbrakのreadyTimeまたはdueTimeの形式が不正|
+|NoCarrierBreakDurationInputError|carrier break has no duration|carrierのbreakのdurationが存在しない|
+|InvalidCarrierDurationTypeInputError|carrier break duration has invalid format (it must be an integer)|carrierのbrakのdurationの形式が不正|
+|InvalidCarrierDurationValueInputError|carrier break duration has invalid value|carrierのbreakのdurationの値が不正 (値が負など)|
+|NoCarrierStartLocationInputError|carrier has no start location|carrierのstartLocationが設定されていない|
+|NoCarrierStartLocationIdInputError|carrier has no start location ID|carrierのstartLocationのIDが設定されていない|
+|NoCarrierStartTimeInputError|carrier has no start time|carrierのstartLocationのtimeが設定されていない|
+|InvalidCarrierStartTimeTypeInputError|carrier start time has invalid format (it must be an integer)|carrierのstartLocationのtimeの形式が不正|
+|InvalidCarrierStartTimeValueInputError|carrier start time has invalid value|carrierのstartLocationのtimeの値が不正 (値が負など)|
+|NoCarrierEndLocationInputError|carrier has no end location|carrierのendLocationが設定されていない|
+|NoCarrierEndLocationIdInputError|carrier has no end location ID|carrierのendLocationのIDが設定されていない|
+|NoCarrierEndLocationTimeInputError|carrier has no end time|carrierのendLocationのtimeが設定されていない|
+|InvalidCarrierEndTimeTypeInputError|carrier end time has invalid format (it must be an integer)|carrierのendLocationのtimeの形式が不正|
+|InvalidCarrierEndTimeValueInputError|carrier end time has invalid value|carrierのendLocationのtimeの値が不正 (値が負など)|
+|CarrierEndTimeIsSmallerThanStartTimeInputError|carrier end time is smaller than start time|carrierのendLocationのtimeがstartLocationのtimeより早い|
+|InvalidCarrierCapacitiesInputError|carrier capacities is invalid format (it must be a list of string)|carrierのcapacitiesの形式が不正|
+|NoCarrierCapacityDimIdInputError|carrier capacity has no dimId|carrierのcapacityのdimIdが設定されていない|
+|InvalidCarrierCapacityDimIdTypeInputError|carrier capacity dimId has invalid format (it must be an integer)|carrierのcapacityのdimIdの形式が不正|
+|InvalidCarrierCapacityDimIdValueInputError|carrier capacity dimId has invalid value|carrierのcapacityのdimIdの値が不正 (値が負など)|
+|InvalidCarrierCapacitySizeTypeInputError|carrier capacity size has invalid format (it must be an integer)|carrierのcapacityのsizeの形式が不正|
+|InvalidCarrierCapacitySizeValueInputError|carrier capacity size has invalid value|carrierのcapacityのsizeの値が不正 (値が負など)|
+|InvalidCarrierFixedCostTypeInputError|carrier fixed cost has invalid format|carrierのcostのfixedの形式が不正|
+|InvalidCarrierDistanceCostTypeInputError|carrier distance cost has invalid format|carrierのcostのdistanceの形式が不正|
+|InvalidCarrierDurationCostTypeInputError|carrier duration cost has invalid format|carrierのcostのdurationの形式が不正|
+|InvalidCarrierServiceTimeCostTypeInputError|carrier serviceTime cost has invalid format|carrierのcostのserviceTimeの形式が不正|
+|InvalidCarrierWaitingTimeCostTypeInputError|carrier waitingTime cost has invalid format|carrierのcostのwaitingTimeの形式が不正|
 |NoCarrierStartLocationDepotInputError|carrier start location is not exist in depot|carrierのstart locationがdepotに存在しない|
 |NoCarrierEndLocationDepotInputError|carrier end location is not exist in depot|carrierのend locationがdepotに存在しない|
 |InputJSONFormatError|invalid format JSON is received|入力したJSONのパース中にエラーが発生した|
@@ -95,3 +137,4 @@
 |UnknownRunEngineError|unknown error in running engine|最適化エンジンの実行中に不明なエラーが発生した|
 |UnknownError|unknown error|不明なエラーが発生した|
 |UseEuclideanDistancePathsError|failed get paths and use euclidean distance paths alternatively|正規のpathsの取得に失敗したため直線距離の距離行列をpathsとして代替する|
+
