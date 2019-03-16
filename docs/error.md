@@ -94,7 +94,7 @@
 |InvalidCarrierSkillInputError|carrier skills is invalid format (it must be a list of string)|carrierのskillの形式が不正|
 |NoCarrierBreakTypeInputError|carrier break type is not set|carrierのbreakの時間枠タイプが設定されていない|
 |InvalidCarrierBreakTypeInputError|carrier break has invalid format type|carrierのbreakの時間枠のタイプの形式が不正なものがある|
-|NoCarrierBreakRangeInputError|carrier break ranges are not set|carrierのbreakのタイプがrangesだがrangeが存在しない|
+|NoCarrierBreakRangeInputError|carrier break ranges are not set|carrierのbreakのタイプがrangeだがrangesが存在しない|
 |InvalidCarrierBreakTypeValueInputError|carrier break type has invalid value|carrierのbreakのtypeの値が不正|
 |InvalidCarrierBreakRangeInputError|carrier break range is invalid format|carrierのbreakのrangesの形式が不正|
 |CarrierBreakReadyDueTimeOverlapError|carrier break ranges overlap|carrierのbreakのrangeが重なっている|
@@ -103,8 +103,8 @@
 |CarrierBreakDueTimeIsSmallerThanReadyTimeInputError|carrier break dueTime must be later than readyTime|carrierのbrakのdueTimeがreadyTimeより早い|
 |InvalidCarrierBreakReadyDueTimeInputError|carrier break range has invalid format readyTime or dueTime (it must be an integer)|carrierのbrakのreadyTimeまたはdueTimeの形式が不正|
 |NoCarrierBreakDurationInputError|carrier break has no duration|carrierのbreakのdurationが存在しない|
-|InvalidCarrierDurationTypeInputError|carrier break duration has invalid format (it must be an integer)|carrierのbrakのdurationの形式が不正|
-|InvalidCarrierDurationValueInputError|carrier break duration has invalid value|carrierのbreakのdurationの値が不正 (値が負など)|
+|InvalidCarrierBreakDurationTypeInputError|carrier break duration has invalid format (it must be an integer)|carrierのbrakのdurationの形式が不正|
+|InvalidCarrierBreakDurationValueInputError|carrier break duration has invalid value|carrierのbreakのdurationの値が不正 (値が負など)|
 |NoCarrierStartLocationInputError|carrier has no start location|carrierのstartLocationが設定されていない|
 |NoCarrierStartLocationIdInputError|carrier has no start location ID|carrierのstartLocationのIDが設定されていない|
 |NoCarrierStartTimeInputError|carrier has no start time|carrierのstartLocationのtimeが設定されていない|
@@ -137,4 +137,3 @@
 |UnknownRunEngineError|unknown error in running engine|最適化エンジンの実行中に不明なエラーが発生した|
 |UnknownError|unknown error|不明なエラーが発生した|
 |UseEuclideanDistancePathsError|failed get paths and use euclidean distance paths alternatively|正規のpathsの取得に失敗したため直線距離の距離行列をpathsとして代替する|
-
