@@ -100,7 +100,7 @@ deliveryのID。
 荷物を積むことで消費するcarrierの容量。
 [carrier](carrier.md)のcapacityに対応する。
 
-### dimensionId\*
+### dimId\*
 
 *integer (≧0)*
 
