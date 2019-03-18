@@ -105,7 +105,7 @@ deliveryのID。
 訪問することで消費するcarrierの容量。
 [carrier](carrier.md)のcapacityに対応する。
 
-### dimensionId\*
+### dimId\*
 
 *integer (≧0)*
 
