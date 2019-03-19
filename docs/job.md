@@ -107,7 +107,7 @@ deliveryのID。
 
 ### dimId\*
 
-*integer (≧0)*
+*string*
 
 要求量の種類を表すID。
 [carrier](carrier.md)が持つcapacityのIDと対応する。
