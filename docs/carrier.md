@@ -84,7 +84,7 @@ endLocationでは帰着の期限を表し、この時刻までに帰るために
 
 ### dimId\*
 
-*integer (≧0)*
+*string*
 
 容量の種類を表すID。
 [job](job.md)が持つdemandのIDと対応する。
