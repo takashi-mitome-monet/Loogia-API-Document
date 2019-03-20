@@ -2,6 +2,8 @@
 
 出力するエラーは以下の通り．
 
+### 一般エラー
+
 |エラーコード|エラーメッセージ|エラー内容|
 |:--|:--|:--|
 |NoBodyError|there is no body|HTTPボディが存在しない|
@@ -137,3 +139,11 @@
 |UnknownRunEngineError|unknown error in running engine|最適化エンジンの実行中に不明なエラーが発生した|
 |UnknownError|unknown error|不明なエラーが発生した|
 |UseEuclideanDistancePathsError|failed get paths and use euclidean distance paths alternatively|正規のpathsの取得に失敗したため直線距離の距離行列をpathsとして代替する|
+
+### 地図関連エラー
+
+|エラーコード|エラーメッセージ|エラー内容|
+|:--|:--|:--|
+|NoMapIncludeAllPointsMapError|there is no map that includes all points|点をすべて含む地図が存在しない|
+|RequestTimeoutMapError|map engine timeout, please reduce the number of stops or narrow area|地図エンジンにおいてタイムアウトが発生した|
+|UnknownMapError|unknown error in map engine|地図エンジンにおいて不明なエラーが発生した|
