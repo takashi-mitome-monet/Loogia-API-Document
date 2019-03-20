@@ -8,28 +8,12 @@
 
 jobのID。
 
-## jobType
-
-*string*
-
-jobの業務種別を表す情報。`"pickup"`, `"delivery"`, `"pickupDelivery"`のうち、いずれかが割り当てられる。
-
-* pickup: 特定の訪問先からデポに荷物を運ぶ業務
-* delivery: デポから特定の訪問先に荷物を運ぶ業務
-* pickupDelivery: 特定の訪問先から特定の訪問先に荷物を運ぶ業務
-
 ## pickup\*
 
 *object*
 
-jobTypeがpickupまたはpickupDeliveryである場合に与えられる情報。
-jobTypeがdeliveryである場合はnullとする。
-
-### id\*
-
-*string*
-
-pickupのID。
+jobの集荷に関する情報。
+集荷を行わないjob（例えばデポで荷物を積んでそれをトラックで配りに行くjob）の場合はnullを指定する。
 
 ### spotId\*
 
@@ -53,14 +37,8 @@ pickupのID。
 
 *object*
 
-jobTypeがdeliveryまたはpickupDeliveryである場合に与えられる情報。
-jobTypeがpickupである場合はnullとする。
-
-### id\*
-
-*string*
-
-deliveryのID。
+jobの配送に関する情報。
+配送を行わないjob（例えばトラックで荷物を集めて来てデポで降ろすというjob）の場合はnullを指定する。
 
 ### spotId\*
 
