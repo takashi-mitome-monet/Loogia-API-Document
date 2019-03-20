@@ -147,7 +147,6 @@
         {
             "jobId": "job1",
             "pickup": {
-                "id": "pickup1",
                 "spotId": "spot1",
                 "timeWindow": {
                     "type": "range",
@@ -155,7 +154,6 @@
                         {
                             "readyTime": 1514854800,
                             "dueTime": 1514858400,
-                            "gradient": 2,
                             "margin": {
                                 "early": 600,
                                 "late": 600
@@ -165,9 +163,6 @@
                 },
                 "serviceDuration": {
                     "general": 120,
-                    "before": {
-                        "1": 30
-                    }
                 }
             },
             "delivery": null,
