@@ -26,6 +26,8 @@ Input.jsonの各キーが取る値についての解説。
 
 何も指定しない場合は同期（`false`）として動作する。
 
+**現在はfalseのみ対応**
+
 ## restrictUturn
 
 *boolean*
