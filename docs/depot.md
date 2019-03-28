@@ -6,7 +6,7 @@
 
 *string*
 
-depotとstopの中でユニークなID。
+depotとspotの中でユニークなID。
 
 ## geocode\*
 
