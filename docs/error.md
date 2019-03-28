@@ -120,8 +120,7 @@
 |CarrierEndTimeIsSmallerThanStartTimeInputError|carrier end time is smaller than start time|carrierのendLocationのtimeがstartLocationのtimeより早い|
 |InvalidCarrierCapacitiesInputError|carrier capacities is invalid format (it must be a list of string)|carrierのcapacitiesの形式が不正|
 |NoCarrierCapacityDimIdInputError|carrier capacity has no dimId|carrierのcapacityのdimIdが設定されていない|
-|InvalidCarrierCapacityDimIdTypeInputError|carrier capacity dimId has invalid format (it must be an integer)|carrierのcapacityのdimIdの形式が不正|
-|InvalidCarrierCapacityDimIdValueInputError|carrier capacity dimId has invalid value|carrierのcapacityのdimIdの値が不正 (値が負など)|
+|InvalidCarrierCapacityDimIdTypeInputError|carrier capacity dimId has invalid format (it must be a string)|carrierのcapacityのdimIdの形式が不正|
 |InvalidCarrierCapacitySizeTypeInputError|carrier capacity size has invalid format (it must be an integer)|carrierのcapacityのsizeの形式が不正|
 |InvalidCarrierCapacitySizeValueInputError|carrier capacity size has invalid value|carrierのcapacityのsizeの値が不正 (値が負など)|
 |InvalidCarrierFixedCostTypeInputError|carrier fixed cost has invalid format|carrierのcostのfixedの形式が不正|
