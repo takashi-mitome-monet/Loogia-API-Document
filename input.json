@@ -48,13 +48,6 @@
                     "size": 10
                 }
             ],
-            "cost": {
-                "fixed": 0,
-                "distance": 0,
-                "duration": 1,
-                "serviceTime": 1,
-                "waitingTime": 0.9
-            }
         },
         {
             "id": "carrier2",
@@ -78,13 +71,6 @@
                     "size": 10
                 }
             ],
-            "cost": {
-                "fixed": 0,
-                "distance": 0,
-                "duration": 1,
-                "serviceTime": 1,
-                "waitingTime": 0.9
-            }
         }
     ],
     "jobs": [
