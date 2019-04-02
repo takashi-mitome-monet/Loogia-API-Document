@@ -145,7 +145,7 @@
     ],
     "jobs": [
         {
-            "jobId": "job1",
+            "id": "job1",
             "pickup": {
                 "spotId": "spot1",
                 "timeWindow": {
