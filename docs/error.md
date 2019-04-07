@@ -132,6 +132,8 @@
 |NoCarrierEndLocationDepotInputError|carrier end location is not exist in depot|carrierのend locationがdepotに存在しない|
 |InvalidCarrierNumberOfFixedFirstServicesTypeInputError|carrier numberOfFixedFirstServices has invalid format (it must be an integer)|carrierのnumberOfFixedFirstServicesの形式が不正|
 |InvalidCarrierNumberOfFixedFirstServicesValueInputError|carrier numberOfFixedFirstServices has invalid value (it must be a positive integer)|carrierのnumberOfFixedFirstServicesの値が不正 (値が負など)|
+|InvalidCarrierMaxTripNumTypeInputError|carrier maxTripNum has invalid format (it must be an integer)|carrierのmaxTripNumの形式が不正|
+|InvalidCarrierMaxTripNumValueInputError|carrier maxTripNum has invalid value (it must be a positive integer)|carrierのmaxTripNumの値が不正 (値が0以下など)|
 |InputJSONFormatError|invalid format JSON is received|入力したJSONのパース中にエラーが発生した|
 |FailGetPathsError|failed to get paths|pathsを取得できなかった|
 |FailGetEuclideanDistancePathsError|failed to get euclidean distance paths|直線距離での距離行列を用いたpathsを取得できなかった|
