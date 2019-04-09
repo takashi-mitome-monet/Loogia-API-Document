@@ -4,7 +4,11 @@
 
 *string*
 
-訪問先で行う業務の種別を表す文字列。pickup, delivery, start, endのいずれかで与えられる。
+訪問先で行う業務の種別を表す文字列。pickup, delivery, start, end, loadUnloadのいずれかで与えられる。
+
+|pickup |delivery |start |end |loadUnload |
+|---|---|---|---|---|
+|集荷地点 |配送地点 |出発地点 |帰着地点 |積み下ろし地点<br>（回転オプションで利用）|
 
 ## arrivalTime
 
