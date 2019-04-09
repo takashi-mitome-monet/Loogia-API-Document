@@ -130,8 +130,8 @@
 |InvalidCarrierWaitingTimeCostTypeInputError|carrier waitingTime cost has invalid format|carrierのcostのwaitingTimeの形式が不正|
 |NoCarrierStartLocationDepotInputError|carrier start location is not exist in depot|carrierのstart locationがdepotに存在しない|
 |NoCarrierEndLocationDepotInputError|carrier end location is not exist in depot|carrierのend locationがdepotに存在しない|
-|InvalidCarrierNumberOfFixedFirstServicesTypeInputError|carrier numberOfFixedFirstServices has invalid format (it must be an integer)|carrierのnumberOfFixedFirstServicesの形式が不正|
-|InvalidCarrierNumberOfFixedFirstServicesValueInputError|carrier numberOfFixedFirstServices has invalid value (it must be a positive integer)|carrierのnumberOfFixedFirstServicesの値が不正 (値が負など)|
+|InvalidCarrierFixedFirstServicesNumTypeInputError|carrier fixedFirstServicesNum has invalid format (it must be an integer)|carrierのfixedFirstServicesNumの形式が不正|
+|InvalidCarrierFixedFirstServicesNumValueInputError|carrier fixedFirstServicesNum has invalid value (it must be a positive integer)|carrierのfixedFirstServicesNumの値が不正 (値が負など)|
 |NoCarrierMultipleTripsMaxTripNumInputError|carrier multipleTrips has no maxTripNum|carrierのmultipleTripsにmaxTripNumが存在しない|
 |InvalidCarrierMultipleTripsMaxTripNumTypeInputError|carrier multipleTrips maxTripNum has invalid format (it must be an integer)|carrierのmultipleTripsのmaxTripNumの形式が不正|
 |InvalidCarrierMultipleTripsMaxTripNumValueInputError|carrier multipleTrips maxTripNum has invalid value (it must be a positive integer)|carrierのmultipleTripsのmaxTripNumの値が不正 (値が0以下など)|
