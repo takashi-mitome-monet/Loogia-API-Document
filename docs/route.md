@@ -8,7 +8,7 @@
 
 |pickup |delivery |start |end |loadUnload |
 |---|---|---|---|---|
-|集荷地点 |配送地点 |出発地点 |帰着地点 |積み下ろし地点<br>（[回転オプション](https://github.com/Optimind-llc/Loogia-API-Document/blob/master/docs/carrier.md#multipletrips)で利用）|
+|集荷 |配送 |出発 |帰着 |積み下ろし<br>（[回転オプション](https://github.com/Optimind-llc/Loogia-API-Document/blob/master/docs/carrier.md#multipletrips)で利用）|
 
 ## arrivalTime
 
