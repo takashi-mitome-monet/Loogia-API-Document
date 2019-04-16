@@ -54,6 +54,7 @@
 |NoSpotLocationGeocodeLatLngInputError|spot location has no lat or lng|spotのlocationが持つgeocodeに緯度経度が無いものがある|
 |InvalidSpotLocationGeocodeLatLngInputError|spot location has invalid format lat or lng|spotのlocationが持つgeocodeに緯度経度の形式が不正なものがある|
 |InvalidSpotLocationUTurnCostInputError|spot location uTurnCost is invalid format|spotのlocationが持つuTurnCostの形式が不正|
+|InvalidSpotLocationTravelDurationInputError|spot location travelDuration is invalid format|spotのlocationが持つtravelDurationの形式が不正|
 |NoJobInputError|input has no job|jobが１つも無い|
 |NoJobIdInputError|job has no id|jobにIDが無いものがある|
 |InvalidJobIdInputError|job has invalid format id|jobにIDの形式が不正なものがある|
