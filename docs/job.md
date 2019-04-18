@@ -18,7 +18,7 @@ jobのID。
 
 *object*
 
-集荷に関する情報を表すオブジェクト。
+jobの集荷に関する情報。 集荷を行わないjob（例えばデポで荷物を積んでそれをトラックで配りに行くjob）の場合はnullを指定する。
 
 ### id\*
 
@@ -48,8 +48,7 @@ pickupのID。
 
 *object*
 
-jobTypeがdeliveryまたはpickupDeliveryである場合に与えられる情報。
-jobTypeがpickupである場合はnullとする。
+jobの配送に関する情報。 配送を行わないjob（例えばトラックで荷物を集めて来てデポで降ろすというjob）の場合はnullを指定する。
 
 ### id\*
 
