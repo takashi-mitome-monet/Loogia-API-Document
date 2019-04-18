@@ -194,8 +194,7 @@ typeに `"local"` を指定した場合に必須。
 *array*
 
 [spot](spot.md)の配列。
-荷物を配送・集荷する訪問先を表す情報。ここで指定したspotのうち、
-各jobに対してjobTypeがpickupまたはdeliveryの場合は1つ、pickupDeliveryの場合は2つが割り当てられる。
+荷物を配送・集荷する訪問先（場所）を表す情報。
 
 ## jobs\*
 
