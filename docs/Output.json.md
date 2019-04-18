@@ -40,7 +40,7 @@ Output.jsonの各キーが取る値についての解説。
 
 *string*
 
-車両のID。
+車両（carrier）のID。
 
 ## meta
 
