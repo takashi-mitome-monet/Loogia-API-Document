@@ -57,7 +57,7 @@
 
 *string*
 
-訪問先のID。
+訪問先での作業（job）もしくはデポ（depot） のID。
 
 ## polyline
 
