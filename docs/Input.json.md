@@ -201,6 +201,7 @@ typeに `"local"` を指定した場合に必須。
 *array*
 
 [job](job.md)の配列。
+配送・集荷などの業務を表す情報。
 制約、コストによってはここで指定したすべてのjobがルートに組み込まれるとは限らない。
 ルートに組み込まれなかったjobはunassignedJobsとして[Output.json](Output.json.md)に出力される。
 
