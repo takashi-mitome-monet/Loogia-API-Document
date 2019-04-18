@@ -34,7 +34,7 @@ spotのID。
 経度。
 
 
-### uturnCost
+### uTurnCost
 
 *real (≧0)*
 
