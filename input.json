@@ -176,6 +176,7 @@
             "skills": [
                 "veteran"
             ],
+            "rideTimeCost": 1.0
         }
     ],
     "paths": [
