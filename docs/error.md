@@ -151,6 +151,7 @@
 
 |エラーコード|エラーメッセージ|エラー内容|
 |:--|:--|:--|
+|InvalidAllowHighwayValueMapError|allowHighway must be Always, OnFirstLeg, OnLastLeg, OnFirstAndLastLegs, or Never|allowHighwayに指定された値が不正|
 |NoMapIncludeAllPointsMapError|there is no map that includes all points|点をすべて含む地図が存在しない|
 |RequestTimeoutMapError|map engine timeout, please reduce the number of stops or narrow area|地図エンジンにおいてタイムアウトが発生した|
 |UnknownMapError|unknown error in map engine|地図エンジンにおいて不明なエラーが発生した|
