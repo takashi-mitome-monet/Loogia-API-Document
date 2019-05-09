@@ -45,6 +45,12 @@ spotのID。
 この値が大きいほど到着したときの方向と出発するときの方向を合わせるようにルートを作成する。
 `restrictUturn`が`true`のときのみ有効。
 
+### travelDuration
+
+*integer (≧0)*
+
+このlocationから実際の作業場所までの移動にかかる時間 (片道分)。
+
 ### forceTargetLeft
 
 *boolean*
