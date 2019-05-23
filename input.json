@@ -36,6 +36,11 @@
     "mapModuleOption": { // 地図エンジンの設定
         "forceTargetLeft": false,
         "allowHighway": "Always|OnFirstLeg|OnLastLeg|OnFirstAndLastLegs|Never",
+        "turnDirectionRestriction": {
+            "intensity": 0-10,
+            "direction": "RIGHT|LEFT"
+        },
+        "keepStraight": 0-10
     },
     "depots": [
         {
