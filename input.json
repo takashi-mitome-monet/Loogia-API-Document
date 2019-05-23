@@ -34,7 +34,7 @@
         }
     },
     "mapModuleOption": { // 地図エンジンの設定
-        "restrictTurnRight": false,
+        "forceTargetLeft": false,
         "allowHighway": "Always|OnFirstLeg|OnLastLeg|OnFirstAndLastLegs|Never",
     },
     "depots": [
@@ -77,7 +77,7 @@
                 "serviceTime": 1.0,
                 "waitingTime": 0.9
             },
-            "numberOfFixedFirstPoints": 3
+            "fixedFirstServicesNum": 3
         },
         {
             "id": "carrierId2",
@@ -118,7 +118,7 @@
                 "serviceTime": 1.0,
                 "waitingTime": 0.9
             },
-            "numberOfFixedFirstPoints": 3
+            "fixedFirstServicesNum": 3
         }
     ],
     "spots": [
@@ -141,8 +141,7 @@
                     "uTurnCost": 10000,
                     "travelDuration": 90
                 }
-            ],
-            "forceTargetLeft": false
+            ]
         }
     ],
     "jobs": [
