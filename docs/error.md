@@ -152,6 +152,12 @@
 |エラーコード|エラーメッセージ|エラー内容|
 |:--|:--|:--|
 |InvalidAllowHighwayValueMapError|allowHighway must be Always, OnFirstLeg, OnLastLeg, OnFirstAndLastLegs, or Never|allowHighwayに指定された値が不正|
+|NoDirectionInTurnDirectionRestrictionMapError|turnDirectionRestriction must have direction|turnDirectionRestrictionにdirectionが指定されていない|
+|InvalidDirectionInTurnDirectionRestrictionValueMapError|direction in turnDirectionRestriction must be LEFT or RIGHT|turnDirectionRestriction.directionに設定された値が不正|
+|InvalidTurnDirectionRestrictionIntensityTypeMapError|intensity in turnDirectionRestriction must be integer|turnDirectionRestriction.intensityに設定された値の形式が不正|
+|InvalidTurnDirectionRestrictionIntensityValueMapError|intensity in turnDirectionRestriction must be between 0 and 10|turnDirectionRestriction.intensityに設定された値が不正|
+|InvalidKeepStraightTypeMapError|keepStraight must be integer|keepStraightに設定された値の形式が不正|
+|InvalidKeepStraightValueMapError|keepStraight must be between 0 and 10|keepStraightに設定された値が不正|
 |NoMapIncludeAllPointsMapError|there is no map that includes all points|点をすべて含む地図が存在しない|
 |RequestTimeoutMapError|map engine timeout, please reduce the number of stops or narrow area|地図エンジンにおいてタイムアウトが発生した|
 |UnknownMapError|unknown error in map engine|地図エンジンにおいて不明なエラーが発生した|
