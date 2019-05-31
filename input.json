@@ -7,7 +7,7 @@
         "type": "duration",
         "intensity": 3
     },
-    "callback": { // セキュリティ上の理由からLoogiaのフロントからのみ受け付ける
+    "callback": { // 使用不可
         "createResult": {
             "url": "https://example.com/result",
             "meta": {}, //コールバック先にそのまま返して欲しい値、なんでも入れることができる
@@ -19,7 +19,7 @@
             "headers": {} //コールバック先にそのままヘッダーとして渡す
         }
     },
-    "export": { // 結果の出力先を指定
+    "export": { // 使用不可
         "createResult": {
             "type": "aws-s3",
             "bucket": "loogia-output",
@@ -55,8 +55,8 @@
         {
             "id": "carrierId1",
             "skills": [
-                "veteran", //Driver由来
-                "cold" //Vehicle由来
+                "veteran",
+                "cold"
             ],
             "break": {
                 "type": "none"
@@ -82,13 +82,13 @@
                 "serviceTime": 1.0,
                 "waitingTime": 0.9
             },
-            "fixedFirstServicesNum": 3
+            "fixedFirstServicesNum": 3 // 使用不可
         },
         {
             "id": "carrierId2",
             "skills": [
-                "veteran", //Driver由来
-                "cold" //Vehicle由来
+                "veteran",
+                "cold"
             ],
             "break": {
                 "type": "range",
@@ -123,7 +123,7 @@
                 "serviceTime": 1.0,
                 "waitingTime": 0.9
             },
-            "fixedFirstServicesNum": 3
+            "fixedFirstServicesNum": 3 // 使用不可
         }
     ],
     "spots": [
