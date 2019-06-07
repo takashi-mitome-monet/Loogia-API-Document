@@ -86,6 +86,7 @@
 |NoJobDimIdInputError|job demand dimId is not set|jobのdemandのdimIdが存在しない|
 |NoJobDemandSizeInputError|job demand size is not set|jobのdemandのsizeが存在しない|
 |InvalidJobDemandSizeInputError|job demand has invalid format size|jobのdemandのsizeの形式が不正|
+|InvalidJobDemandSizeValueInputError|job demand has invalid size value|jobのdemandのsizeの値が不正 (値が負など)|
 |NoJobDimIdInCarrierCapacityInputError|job dimId of demand is not exist in carrier capacity|jobのdemandのdimIdをcapacityとして持つcarrierが存在しない|
 |InvalidJobPriorityInputError|job priority is invalid format|jobのpriorityの形式が不正|
 |InvalidJobPriorityValueInputError|job priority has invalid value|jobのpriorityの値が不正|
