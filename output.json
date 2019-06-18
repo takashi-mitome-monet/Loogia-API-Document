@@ -1,10 +1,11 @@
 {
     "meta": {},
-    "error": { //エラーでない場合はnull
-        "message": "invalid JSON format",
-        "code": 1000
+    "error": null,
+    "info": {
+      "calculationTime": 60,
+      "version": "v3"
     },
-    "solution": { //解が無い場合は空のオブジェクト
+    "solution": {
         "carriers": [
             {
                 "id": "carrier1",

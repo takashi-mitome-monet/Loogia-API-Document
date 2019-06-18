@@ -1,0 +1,12 @@
+{
+    "meta": {},
+    "error": {
+        "message": "job has invalid format id",
+        "code": "InvalidJobIdInputError"
+    },
+    "info": {
+      "calculationTime": 0,
+      "version": "v3"
+    },
+    "solution": {}
+}
