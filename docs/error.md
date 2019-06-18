@@ -7,6 +7,35 @@
 |エラーコード|エラーメッセージ|エラー内容|
 |:--|:--|:--|
 |NoBodyError|there is no body|HTTPボディが存在しない|
+|NoResultKeyInputError|there is no result key in input|inputに計算結果取得キーが存在しない|
+|InvalidResultKeyInputError|invalid format result key in input|計算結果取得キーの値が文字列ではない|
+|NoResultKeyDatabaseError|there is no result key in database|データベースに計算結果取得キーが登録されていない|
+|InvalidBodyFormatError|invalid format body|HTTPボディがJSON形式ではない|
+|InvalidAsyncValueInputError|async must be boolean|asyncの値が真偽値ではない|
+|InvalidCalculationTimeValueInputError|calculationTime must be Integer|calculationTimeの値が整数ではない|
+|InvalidVersionInputError|version must be string|versionの値が文字列ではない|
+|NoSinceUntilInputError|there is no since or until|since, untilのいずれか, または両方が存在しない|
+|InvalidSinceUntilInputError|invalid format since or until|since, untilのいずれか, または両方の形式が不正|
+|InvalidSinceUntilValueInputError|invalid value since or until|since, untilのいずれか, または両方の値が不正 (sinceの値がuntilの値より小さいなど)|
+|VersionNotFoundInputError|unknown engine version is specified|存在しないバージョンが指定された|
+|ProcessTimedOut|process timed out|最適化エンジンの実行がタイムアウトした|
+|CallbackNotPermitted|callback is not permitted|callbackの指定が許可されていない|
+|ExportNotPermitted|export is not permitted|exportの指定が許可されていない|
+|InvalidPathParameter|invalid path parameter|不正なURLパスが指定された|
+|CalculationResultExpired|calculation result expired|計算結果取得のアクセス期限が切れた|
+|UsageRequestConnectionTimeout|usage request connection timeout|集計結果の取得中にタイムアウトした|
+|UnknownInputError|unknown error in reading input|インプットの読み込み中に不明なエラーが発生した|
+|UnknownOptimizeError|unknown error in optimizing|最適化計算中に不明なエラーが発生した|
+|UnknownRunEngineError|unknown error in running engine|最適化エンジンの実行中に不明なエラーが発生した|
+|UnknownResultRequestError|unknown error in requesting result|計算結果の取得中に不明なエラーが発生した|
+|UnknownUsageRequestError|unknown error in requesting usage|集計結果の取得中に不明なエラーが発生した|
+|UnknownError|unknown error|不明なエラーが発生した|
+
+### 最適化関連エラー
+
+|エラーコード|エラーメッセージ|エラー内容|
+|:--|:--|:--|
+|NoBodyError|there is no body|HTTPボディが存在しない|
 |RequestTimeoutMapError|map engine timeout, please reduce the number of stops or narrow area|地図エンジンにおいてタイムアウトが発生した|
 |UnknownMapError|unknown error in map engine|地図エンジンにおいて不明なエラーが発生した|
 |InvalidCalculationTimeValueInputError|calculationTime must be Integer|calculationTimeの値が整数ではない|
