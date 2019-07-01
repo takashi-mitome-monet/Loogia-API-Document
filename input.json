@@ -3,6 +3,7 @@
     "calculationTime": 10,
     "restrictUturn": true,
     "ignoreReturnTrip": false,
+    "optimizationType": "InsertOnly|FullOptimization", // 使用不可
     "balancing": {
         "type": "duration",
         "intensity": 3
@@ -40,7 +41,8 @@
             "intensity": 0-10,
             "direction": "RIGHT|LEFT"
         },
-        "keepStraight": 0-10
+        "keepStraight": 0-10,
+        "restructUturnBetweenSpots": true
     },
     "depots": [
         {
@@ -75,7 +77,7 @@
                     "size": 100000
                 }
             ],
-            "cost": {
+            "cost": { // 使用不可
                 "fixed": 0.0,
                 "distance": 0.0,
                 "duration": 1.0,
@@ -116,7 +118,7 @@
                     "size": 100000
                 }
             ],
-            "cost": {
+            "cost": { // 使用不可
                 "fixed": 0.0,
                 "distance": 0.0,
                 "duration": 1.0,
@@ -183,6 +185,11 @@
                 "veteran"
             ],
             "rideTimeCost": 1.0
+        },
+        {
+            "id": "job2",
+            "pickup": { ... },
+            ...
         }
     ],
     "paths": [
@@ -262,6 +269,8 @@
                 ]
             }
         ],
-        "unassignedJobs": []
+        "unassignedJobs": [
+            "job2"
+        ]
     }
 }
