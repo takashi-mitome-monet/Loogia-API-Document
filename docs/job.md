@@ -58,7 +58,7 @@ jobの配送に関する情報。
 
 訪問先における業務の実行にかかる時間を表す[serviceDuration](serviceDuration.md)のオブジェクト。
 
-## priority
+## priority\*
 
 *integer (1〜10)*
 
