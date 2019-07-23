@@ -120,6 +120,8 @@
 |InvalidJobPriorityInputError|job priority is invalid format|jobのpriorityの形式が不正|
 |InvalidJobPriorityValueInputError|job priority has invalid value|jobのpriorityの値が不正|
 |InvalidJobSkillInputError|job skills is invalid format|jobのskillの形式が不正|
+|InvalidJobArrivalTypeInputError|job arrivalType is invalid format|jobのarrivalTypeの形式が不正|
+|InvalidJobArrivalTypeValueInputError|job arrivalType has invalid value|jobのarrivalTypeの値が不正|
 |NoCarrierInputError|input has no carrier|carrierが１つも無い|
 |NoCarrierIdInputError|carrier has no id|carrierにIDが無いものがある|
 |InvalidCarrierIdInputError|carrier has invalid format id|carrieにIDの形式が不正なものがある|
