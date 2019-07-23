@@ -36,45 +36,19 @@
 |エラーコード|エラーメッセージ|エラー内容|
 |:--|:--|:--|
 |NoBodyError|there is no body|HTTPボディが存在しない|
-|RequestTimeoutMapError|map engine timeout, please reduce the number of stops or narrow area|地図エンジンにおいてタイムアウトが発生した|
+|RequestTimeoutMapError|map engine timeout, please reduce the number of spots or narrow area|地図エンジンにおいてタイムアウトが発生した|
 |UnknownMapError|unknown error in map engine|地図エンジンにおいて不明なエラーが発生した|
 |InvalidCalculationTimeValueInputError|calculationTime must be Integer|calculationTimeの値が整数ではない|
 |InvalidIgnoreReturnTripValueInputError|ignoreReturnTrip must be boolean|ignoreReturnTripの値が真偽値ではない|
 |NoBalancingTypeValueInputError|balancing has no type|balancingオブジェクトにtypeが存在しない|
 |InvalidBalancingTypeValueInputError|balancing has invalid format type|balancingオブジェクトのtypeの形式が不正|
 |InvalidBalancingIntensityValueInputError|balancing has invalid format intensity|balancingオブジェクトのintensityの形式が不正|
-|NoCalculationTimeWithAsyncTrueInputError|calculationTime must be set if async is true|asyncがtrueであるがcalculationTimeが存在しない|
-|StopsAndSpotsCoexistInputError|stops and spots must not coexist in input|インプットにstopsキーとspotsキーの両方が存在する|
-|NoStopsOrSpotsInputError|input has neither stops nor spots|インプットにstopsキーとspotsキーの両方とも存在しない|
 |NoDepotInputError|input has no depot|depotが存在しない|
 |NoDepotIdInputError|depot has no id|depotにIDが無いものがある|
 |InvalidDepotIdInputError|depot has invalid type of id|depotにIDの形式が不正|
 |NoDepotGeocodeInputError|depot (id:xx) has no geocode|depotにgeocodeが無いものがある|
 |NoDepotLatLngInputError|depot (id:xx) has no lat or lng|depotに緯度経度が無いものがある|
 |InvalidDepotLatLngInputError|depot (id:xx) has invalid format lat or lng|depotに緯度経度の形式が不正なものがある|
-|NoStopInputError|input has no stop|stopが１つも無い|
-|NoStopIdInputError|stop has no id|stopにIDが無いものがある|
-|InvalidStopIdInputError|stop has invalid format id|stopにIDの形式が不正なものがある|
-|NoStopGeocodeInputError|stop has no geocode|stopにgeocodeが無いものがある|
-|NoStopLatLngInputError|stop has no lat or lng|stopに緯度経度が無いものがある|
-|InvalidStopLatLngInputError|stop has invalid format lat or lng|stopに緯度経度の形式が不正なものがある|
-|NoStopTimeWindowTypeInputError|stop time window type is not set|stopの時間枠タイプが設定されていない|
-|InvalidStopTimeWindowTypeInputError|stop has invalid format time window type|stopの時間枠のタイプの形式が不正なものがある|
-|NoStopTimeWindowRangeInputError|stop time window ranges are not set|stopの時間枠のタイプがrangesだがrangeが存在しない|
-|NoStopReadyDueTimeInputError|stop time window range has no readyTime or dueTime|stopの時間枠のタイプがrangesだがrangeの中身が存在しない|
-|InvalidStopReadyDueTimeValueInputError|stop time window range has invalid readyTime or dueTime value|stopの時間枠のreadyTimeまたはdueTimeの値が不正 (dueTimeの値がreadyTimeの値より小さいなど)|
-|InvalidStopReadyDueTimeInputError|stop time window range has invalid format readyTime or dueTime|stopの時間枠のreadyTimeまたはdueTimeの形式が不正|
-|NoStopDimIdInputError|stop dimId of demand is not set|stopのdemandのdimIdが存在しない|
-|NoStopDemandSizeInputError|stop demand size is not set|stopのdemandのsizeが存在しない|
-|InvalidStopDemandSizeInputError|stop has invalid format of demand size|stopのdemandのsizeの形式が不正|
-|NoStopDimIdInCarrierCapacityInputError|stop dimId of demand is not exist in carrier capacity|stopのdemandのdimIdをcapacityとして持つcarrierが存在しない|
-|NoStopServiceDurationInputError|stop service duration is not set|stopのserviceDurationが存在しない|
-|NoStopServiceDurationGeneralInputError|stop service duration (general) is not set|stopのserviceDurationのgeneralが存在しない|
-|InvalidStopServiceDurationInputError|stop service duration (general) is invalid format|stopのserviceDurationのgeneralの形式が不正|
-|InvalidStopPriorityInputError|stop priority is invalid format|stopのpriorityの形式が不正|
-|InvalidStopSkillInputError|stop skills is invalid format|stopのskillの形式が不正|
-|InvalidStopUTurnCostInputError|stop uTurnCost is invalid format|stopのuTurnCostの形式が不正|
-|NoStopServiceTypeInputError|some stop do not have service type|stopのserviceTypeが存在しない|
 |NoSpotInputError|input has no spot|spotが１つも無い|
 |NoSpotIdInputError|spot has no id|spotにIDが無いものがある|
 |InvalidSpotIdInputError|spot has invalid format id|spotにIDの形式が不正なものがある|
@@ -191,5 +165,5 @@
 |InvalidKeepStraightTypeMapError|keepStraight must be integer|keepStraightに設定された値の形式が不正|
 |InvalidKeepStraightValueMapError|keepStraight must be between 0 and 10|keepStraightに設定された値が不正|
 |NoMapIncludeAllPointsMapError|there is no map that includes all points|点をすべて含む地図が存在しない|
-|RequestTimeoutMapError|map engine timeout, please reduce the number of stops or narrow area|地図エンジンにおいてタイムアウトが発生した|
+|RequestTimeoutMapError|map engine timeout, please reduce the number of spots or narrow area|地図エンジンにおいてタイムアウトが発生した|
 |UnknownMapError|unknown error in map engine|地図エンジンにおいて不明なエラーが発生した|
