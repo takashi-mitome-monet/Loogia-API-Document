@@ -19,6 +19,7 @@ pathの始点の情報。
 *integer*
 
 同じspotに対する停車位置候補のインデックス。
+spotのlocationsのインデックス (0始まり) に対応。
 
 ### geocode
 
