@@ -20,7 +20,7 @@ pathの始点の情報。
 
 同じspotに対する停車位置候補のインデックス。
 
-### geocode \*
+### geocode
 
 *object*
 
