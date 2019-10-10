@@ -198,7 +198,7 @@
             "distance": 291.04125610657695,
             "encodedPolyline": "or{uEyoubYGiBhAGjAIhAGSaG",
             "from": {
-                "spotId": "depot1",
+                "spotId": "depot_depot1",
                 "parkingLocationIndex": 0,
                 "geocode": {
                     "lat": 35.172520,
@@ -207,7 +207,7 @@
                 "heading": 84
             },
             "to": {
-                "spotId": "spot1",
+                "spotId": "spot_spot1",
                 "parkingLocationIndex": 0,
                 "geocode": {
                     "lat": 35.163891,
@@ -221,7 +221,7 @@
             "distance": 393.1967367288687,
             "encodedPolyline": "or{uEyoubYFlBjAGQwEjAIhAGSaG",
             "from": {
-                "spotId": "spot1",
+                "spotId": "spot_spot1",
                 "parkingLocationIndex": 0,
                 "geocodes": {
                     "lat": 35.163891,
@@ -230,7 +230,7 @@
                 "heading": 84
             },
             "to": {
-                "spotId": "depot1",
+                "spotId": "depot_depot1",
                 "parkingLocationIndex": 0,
                 "geocodes": {
                     "lat": 35.172520,
